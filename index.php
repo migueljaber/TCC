@@ -1,3 +1,9 @@
+<?php
+    
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -201,11 +207,9 @@
         <section class="formulario" id="formulario">
             <div class="interface">
                 <h2 class="titulo">FALE <span>CONOSCO</span></h2>
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
-                    <input type="text" name="" id="" placeholder="Seu E-mail:" required>
-                    <input type="text" name="" id="" placeholder="Seu celular:">
-                    <textarea name="" id="" placeholder="sua mensagem" required></textarea>
+                <form name="form_msg" id="form_msg" action="index.php" method="POST">
+                    <input type="text" name="email" id="email" placeholder="Seu E-mail:" required>
+                    <textarea name="mensagem" id="mensagem" placeholder="sua mensagem" required></textarea>
                     <div class="advance-enviar"> <input type="submit" value="ENVIAR"></div>
                 </form>
             </div>
