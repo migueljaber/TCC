@@ -1,5 +1,10 @@
 <?php
+include "conexao.php";    
+    $nome=filter_input(INPUT_POST, "nome", FILTER_SANITIZE_STRING);
+    $mensagem=filter_input(INPUT_POST, "mensagem", FILTER_SANITIZE_STRING);
     
+    $result_usuario="INSERT INTO feedback (nome, mensagem) VALUES ('$nome', '$mensagem')";
+    $SQL=mysqli_query($conn, $result_usuario);
 
 ?>
 
@@ -208,8 +213,8 @@
             <div class="interface">
                 <h2 class="titulo">FALE <span>CONOSCO</span></h2>
                 <form name="form_msg" id="form_msg" action="index.php" method="POST">
-                    <input type="text" name="email" id="email" placeholder="Seu E-mail:" required>
-                    <textarea name="mensagem" id="mensagem" placeholder="sua mensagem" required></textarea>
+                    <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
                     <div class="advance-enviar"> <input type="submit" value="ENVIAR"></div>
                 </form>
             </div>
