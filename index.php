@@ -10,6 +10,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="script.js" defer ></script>
 
     <title>Advance</title>
 
@@ -34,8 +35,8 @@
             </nav>
             <div class="advance-contato">
                 <li><a href="#formulario"></a></li>
-                <a href="#formulario">
-                    <button>contato</button>
+                <a href="cadastro.php">
+                <button><i class="bi bi-person-circle"></i></button>
                 </a>
             </div>
         </div>
@@ -45,19 +46,17 @@
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
-                        <h1>TRANSFORMANDO SEU NEGÓCIO EM SITES DIGITAIS<span>.</span></h1>
+                       <h1> </h1>
                         <p class="txt">Tecnologia e negócios andam lado a lado. Com uma combinação de um design
                             sofisticado, aplicabilidade intuitiva, otimização para resultados e uma ótima equipe, estamos
                             prontos para criar a presença online dos seus negócios</p>
                         <div class="advance-contato">
                             <a href="#">
-                                <button>Entre em contato</button>
+                         
                             </a>
                         </div>
                     </div>
-                    <div class="img-topo-site">
-                        <img width="450px" height="450px;" src="imagens/logo.1.png" alt="">
-                    </div>
+                    
                 </div>
             </div>
         </section>

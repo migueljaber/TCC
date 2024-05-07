@@ -110,19 +110,34 @@ section.inicio .flex{
     color: white;
     font-size: 38px;
     line-height: 40px;
+     text-align: center;
+     padding-top: 50px;
 }
 .inicio .txt-topo-site h1 span{
     color: #128f81;
+    font-family: popp;
 
 }
 .inicio .txt-topo-site p{
     color: white;
-    margin: 40px 0;
+    margin: 50px 0;
+    padding-top: 70px;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    text-align: center;
 }
 .inicio .img-topo-site img{
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
+header .advance-contato button{
+    background-color: #2c2c2c;
+    box-shadow: 0px 0px 8px #2c2c2c ;
+    transform: scale(1.20);
+ }
+ header .advance-contato button i{
+    color: #128f81;
+ }
 
 
 @keyframes flutuar{
