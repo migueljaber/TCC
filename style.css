@@ -496,3 +496,33 @@ section.motivos{
     padding: 5px;
 }
 
+.interface .titulo h2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 36px;
+    padding: 40px;
+    
+}
+.interface .titulo span{
+    color: #128f81;
+}
+
+.card-group .card img{
+    height: 300px;
+    width: 300px;
+    padding-top: 20px;
+}
+ .card-group .card-body p{
+    color: wheat;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: nowrap; /* Evita que as cartas quebrem para uma nova linha */
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal se o conteúdo ultrapassar a largura do contêiner */
+}
+
+.card {
+    flex: 0 0 auto; /* Define o tamanho inicial das cartas para que elas não cresçam ou encolham */
+    margin-right: 15px; /* Adiciona espaçamento entre as cartas */
+}

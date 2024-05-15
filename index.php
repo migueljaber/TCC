@@ -197,16 +197,67 @@
         </section>
     
      
-        <section class="formulario" id="formulario">
-            <div class="interface">
-                <h2 class="titulo">FALE <span>CONOSCO</span></h2>
-                <form name="form_msg" id="form_msg" action="https://formsubmit.co/advancedessoft@gmail.com" method="POST">
-                    <input type="text" name="nome" id="nome" placeholder="Nome" required>
-                    <input type="email" name="email" id="email" placeholder="E-mail" required>
-                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
-                    <div class="advance-enviar"> <input type="submit" value="ENVIAR"></div>
-                </form>
-            </div>
+      
+        
+        <section class="equipe" id= "equipe">
+            
+            
+                <div class="card-group">
+                    <div class="card">
+                      <img src="imagens/Andrei.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h3 class="card-title"><u>Andrei Sousa</u></h3>
+                        <p class="card-text">Desenvolvedor</p>
+                   
+                      </div>
+                    
+                    </div>
+                    <div class="card">
+                      <img src="imagens/dede.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h3 class="card-title"><u>Carlos André</u></h3>
+                        <p class="card-text">Auxiliar de desenvolvimento</p>
+                      </div>
+                      
+                    </div>
+                    <div class="card">
+                      <img src="imagens/gb.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h3 class="card-title"><u>Luís Gabriel</u></h3>
+                        <p class="card-text">Mídias sociais</p>
+                      </div>
+                     
+                    </div>
+                  </div>
+
+                  <div class="card-group">
+                    <div class="card">
+                      <img src="imagens/mg.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h3 class="card-title"><u>Miguel Jaber</u></h3>
+                        <p class="card-text">Programador </p>
+                   
+                      </div>
+                    
+                    </div>
+                    <div class="card">
+                      <img src="imagens/lucas.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h3 class="card-title"><u>Lucas Laybenith</u></h3>
+                        <p class="card-text">Designer</p>
+                      </div>
+                      
+                    </div>
+                    <div class="card">
+                      <img src="imagens/david.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h3 class="card-title"><u>David Alves</u></h3>
+                        <p class="card-text">Documentador</p>
+                      </div>
+                     
+                    </div>
+                  </div>
+            
         </section>
     </main>
 
