@@ -26,7 +26,6 @@
             </div>
             <nav class="menu desktop">
                 <ul>
-                    <li><a href="#inicio">Ínicio</a></li>
                     <li><a href="#sobre">Sobre nós</a></li>
                     <li><a href="#especialidades">Especialidades</a></li>
                     <li><a href="#metodologia">Metodologia</a></li>
@@ -35,7 +34,7 @@
             </nav>
             <div class="advance-contato">
                 <li><a href="#formulario"></a></li>
-                <a href="cadastro.php">
+                <a href="./Cadastro/cadastro.php">
                 <button><i class="bi bi-person-circle"></i></button>
                 </a>
             </div>
@@ -67,7 +66,7 @@
                 <div class="flex">
                     <div class="especialidades-box">
                         <i class="bi bi-code-slash"></i>
-                        <h3>desenvolovimeto de software
+                        <h3>Desenvolvimento de Software
                             web/desktop
                         </h3>
                       
@@ -108,11 +107,7 @@
                         <p> Ao escolher nossa empresa, você está optando por inovação, qualidade e um parceiro
                             confiável para impulsionar o crescimento do seu negócio.
                             Deixe-nos transformar suas ideias em realidade e juntos alcançaremos o sucesso desejado.</p>
-                        <div class="advance-social">
-                            <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="#"><button><i class="bi bi-twitter-x"></i></button></a>
-                            <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -126,11 +121,11 @@
                 <div class="colunas">
                     <div class="col col1">
                         <i class="bi bi-brush"></i>
-                <h3>Designe</h3>
+                <h3>Design</h3>
                 <p>A equipe de design UX da nossa empresa de software é altamente inovadora, focada em criar experiências digitais intuitivas e envolventes. Combinando criatividade e expertise técnica, entregamos soluções que elevam o padrão da indústria, proporcionando aos usuários uma jornada memorável e eficiente.</p>
         
                 <i class="bi bi-globe-americas"></i>
-                <h3>Desenvolvimeto completo</h3>
+                <h3>Desenvolvimento completo</h3>
                 <p>Nossa empresa de software oferece um desenvolvimento completo de ideias até publicações, garantindo soluções digitais de ponta com eficiência e qualidade excepcionais.</p>
             </div>
             <div class="col col2">
@@ -152,7 +147,7 @@
                 <div class="main">
                     <div class="card card1">
                         <h1>1 ETAPA</h1>
-                        <h2>ÁNALISE DE REQUISITOS</h2>
+                        <h2>ANÁLISE DE REQUISITOS</h2>
                         <p>Realizamos uma análise de requisitos completa para entender as necessidades dos clientes,
                             identificando requisitos funcionais e não funcionais essenciais. Trabalhamos em colaboração
                             para validar e refinar esses requisitos, assegurando que cada solução desenvolvida atenda às
@@ -196,7 +191,7 @@
             </div>
         </section>
     
-     
+        <h2 class="titulo">NOSSA <span>EQUIPE</span></h2>
       
         
         <section class="equipe" id= "equipe">
@@ -213,7 +208,7 @@
                     
                     </div>
                     <div class="card">
-                      <img src="imagens/dede.jpeg" class="card-img-top" alt="...">
+                      <img src="./imagens/André.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h3 class="card-title"><u>Carlos André</u></h3>
                         <p class="card-text">Auxiliar de desenvolvimento</p>
@@ -221,7 +216,7 @@
                       
                     </div>
                     <div class="card">
-                      <img src="imagens/gb.jpeg" class="card-img-top" alt="...">
+                      <img src="./imagens/Luiz.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h3 class="card-title"><u>Luís Gabriel</u></h3>
                         <p class="card-text">Mídias sociais</p>
@@ -232,7 +227,7 @@
 
                   <div class="card-group">
                     <div class="card">
-                      <img src="imagens/mg.jpeg" class="card-img-top" alt="...">
+                      <img src="./imagens/Miguel.png" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h3 class="card-title"><u>Miguel Jaber</u></h3>
                         <p class="card-text">Programador </p>
@@ -241,7 +236,7 @@
                     
                     </div>
                     <div class="card">
-                      <img src="imagens/lucas.jpeg" class="card-img-top" alt="...">
+                      <img src="./imagens/Lucas.png" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h3 class="card-title"><u>Lucas Laybenith</u></h3>
                         <p class="card-text">Designer</p>
@@ -297,18 +292,11 @@
                 </div>
 
                 <div class="footer-col">
-                    <h4>Entre em contato conosco!</h4>
-                    <div class="form-sub">
-                        <form>
-                            <input type="email" placeholder="Digite o seu e-mail" required>
-                            <button>inscrever</button>
-                        </form>
-                    </div>
+                    
 
                     <div class="medias-socias">
-                        <a href="#"><i class="bi bi-whatsapp"></i>
-                            <a href="#"> <i class="bi bi-instagram"></i>
-                                <a href="#"> <i class="bi bi-twitter"></i> </a>
+                            <a href="#https://www.instagram.com/advance.dev/"> <i class="bi bi-instagram"></i>
+                                <a href="#https://x.com/AdvanceDesSoft"> <i class="bi bi-twitter"></i> </a>
                     </div>
 
                 </div>

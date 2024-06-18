@@ -1,0 +1,113 @@
+/* estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    overflow: hidden; /* Impede a rolagem da tela */
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+h2.titulo {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #128f81;
+}
+
+button:hover, form .advance-enviar input:hover {
+    box-shadow: 0px 0px 8px #1ec2af;
+    transform: scale(1.10);
+}
+
+/* Botão de voltar */
+.btn-voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #128f81;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-voltar:hover {
+    background-color: #0e6d66;
+}
+
+/* Botão já tem conta */
+.btn-ja-tem-conta {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #128f81;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-ja-tem-conta:hover {
+    background-color: #0e6d66;
+}
+
+/* ESTILO DO FORMULARIO DE CONTATO */
+section.formulario {
+    padding: 175px 4%;
+}
+
+section.formulario .interface h2 {
+    padding-top: 50px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input {
+    width: 100%;
+    background-color: rgba(86, 8, 59, 0.863);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form .advance-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .advance-enviar input {
+    width: 120px;
+    background-color: #128f81;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
