@@ -13,3 +13,6 @@ Cores do site
 
 #0f8d81
 #61b11a
+
+placehoder cor 
+#d9d7f1
