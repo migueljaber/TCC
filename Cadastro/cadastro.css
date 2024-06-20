@@ -21,6 +21,7 @@ h2.titulo {
     color: white;
     font-size: 36px;
     text-align: center;
+    padding: 10px;
 }
 
 h2.titulo span {
@@ -31,51 +32,65 @@ button:hover, form .advance-enviar input:hover {
     box-shadow: 0px 0px 8px #1ec2af;
     transform: scale(1.10);
 }
+section.button{
+    box-shadow: 0px 0px 8px #1ec2af;
+    transform: scale(1.10);
+    border-radius: 50px;
+    transition: .2s;
+}
+
 
 /* Botão de voltar */
 .btn-voltar {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 25px;
+    left: 25px;
     padding: 10px 20px;
     background-color: #128f81;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    transition: .2s;
+    border-radius: 30px;
 }
 
 .btn-voltar:hover {
     background-color: #0e6d66;
+    transform: scale(1.10);
+    border-radius: 40px;
 }
 
 /* Botão já tem conta */
 .btn-ja-tem-conta {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top:25px;
+    right: 25px;
     padding: 10px 20px;
     background-color: #128f81;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
+    transition: .2s;
+    border-radius: 40px;
+    font-family: "Poppins", sans-serif;
 }
 
 .btn-ja-tem-conta:hover {
     background-color: #0e6d66;
+    transform: scale(1.10);
+    border-radius: 40px;
+    transition: .2s;
 }
 
 /* ESTILO DO FORMULARIO DE CONTATO */
 section.formulario {
-    padding: 175px 4%;
+    padding: 65px 4%;
 }
 
-section.formulario .interface h2 {
-    padding-top: 50px;
-}
+
 
 form {
     max-width: 500px;
@@ -84,17 +99,17 @@ form {
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    margin-top: 40px;
+    padding-bottom: 50px;
 }
 
 form input {
     width: 100%;
-    background-color: rgba(86, 8, 59, 0.863);
+    background-color: #d9d7f1;
     border: 0;
     outline: 0;
     padding: 20px 15px;
     border-radius: 15px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 18px;
 }
 

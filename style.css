@@ -13,6 +13,13 @@ body{
 	overflow:auto;
 
 }
+.bg{
+    background-image: url("fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 .interface{
     max-width: 1280px;
     margin: 0 auto;
@@ -27,8 +34,8 @@ p.txt {
 
 
 .advance-contato button {
-    padding: 10px 40px;
-    font-size: 25px;
+    padding: 5px 30px;
+    font-size: 35px;
     font-weight: 600;
     background-color: #128f81;
     border: 0;
@@ -45,10 +52,7 @@ h2.titulo{
 h2.titulo span{
     color: #128f81;
 }
- button:hover, form .advance-enviar input:hover{
-    box-shadow: 0px 0px 8px #1ec2af;
-    transform: scale(1.10);
-}
+
 /* estilo cabeçalho */
 
 header {
@@ -75,6 +79,9 @@ header a{
     text-decoration: none;
     display:inline-block;
     transition: .2s;
+    font-size: 20px;
+
+
 
 }
 header a:hover{
@@ -153,20 +160,21 @@ header .advance-contato button{
 
 /* ESTILO DAS ESPECIALIDADES */
 section.especialidades{
-    padding: 15px 4%;
+    padding: 5px 4%;
 }
-section.especialidades .flex{
+section.especialidades .flex {
     gap: 60px;
 }
 
-.especialidades .especialidades-box{
+.especialidades .especialidades-box button{
     color: white;
-    padding: 40px;
+    padding: 25px;
     border-radius: 20px;
-    margin-top: 45px;
+    margin-top: 55px;
     transition: 2s;
+    justify-content: space-between;
 }
-.especialidades .especialidades-box:hover{
+.especialidades .especialidades-box:hover button{
     transform: scale(1.10);
     box-shadow: 0 0 30px #ffffff;
 
@@ -177,15 +185,20 @@ section.especialidades .flex{
     color: #128f81;
    
 }
-.especialidades .especialidades-box h3{
-    font-size: 28px;
+.especialidades .especialidades-box button h3{
+    font-size: 30px;
     margin: 15px 0;
+    color: white;
   
     
 }
-.especialidades .especialidades-box p{
-    font-size: 22px;
-    margin: 15px 0;
+.especialidades .especialidades-box button p{
+    font-size: 27px;
+    margin: 10px 0;
+}
+.especialidades .especialidades-box button{
+    background-color: black;
+  
 }
 /* ESTILO DO SOBRE */
 section.sobre{
@@ -201,8 +214,6 @@ section.sobre .flex{
 }
 .sobre .txt-sobre{
     color: white;
-
-
 }
 .sobre .txt-sobre h2{
     font-size: 40px;
@@ -244,12 +255,12 @@ form{
 }
 form input, form textarea{
     width: 100%;
-    background-color: rgba(86, 8, 59, 0.863);
+    background-color: #d9d7f1;
     border: 0;
     outline: 0;
     padding: 20px 15px;
     border-radius: 15px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 18px;
 }
 
@@ -257,6 +268,7 @@ form textarea{
     resize: none;
     max-height: 500px;
 }
+
 form .advance-enviar{
     margin-top: 20px;
     text-align: center;
@@ -264,7 +276,7 @@ form .advance-enviar{
 form .advance-enviar input{
     width: 120px;
     background-color: #128f81;
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: 700;
     cursor: pointer;
     transition: .2s;

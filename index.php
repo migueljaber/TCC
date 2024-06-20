@@ -1,3 +1,17 @@
+<?php
+include "/xampp/htdocs/TCC/conexao.php";    
+$usuario=filter_input(INPUT_POST, "usuario", FILTER_SANITIZE_STRING);
+$CPF=filter_input(INPUT_POST, "CPF", FILTER_SANITIZE_STRING);
+$email=filter_input(INPUT_POST, "email", FILTER_SANITIZE_STRING);
+$numero=filter_input(INPUT_POST, "numero", FILTER_SANITIZE_STRING);
+$senha=filter_input(INPUT_POST, "senha", FILTER_SANITIZE_STRING);
+
+if ($senha === filter_input(INPUT_POST, "senha2", FILTER_SANITIZE_STRING)) {
+    $result_usuario="INSERT INTO cliente (usuario, CPF, email, numero, senha) VALUES ('$usuario', '$CPF', '$email', '$numero', '$senha')";
+    $SQL=mysqli_query($conn, $result_usuario);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -16,7 +30,7 @@
 
 </head>
 
-<body>
+<body class="bg">
     <header id="header">
         <div class="interface">
             <div class="logo">
@@ -26,6 +40,7 @@
             </div>
             <nav class="menu desktop">
                 <ul>
+                <li><a href="#inicio">Ínicio</a></li>
                     <li><a href="#sobre">Sobre nós</a></li>
                     <li><a href="#especialidades">Especialidades</a></li>
                     <li><a href="#metodologia">Metodologia</a></li>
@@ -64,25 +79,26 @@
             <div class="interface">
                 <h2 class="titulo">NOSSAS <span>ESPECIALIDADES</span></h2>
                 <div class="flex">
-                    <div class="especialidades-box">
+                    <div class="especialidades-box"><a href="./serviços/web.php"><button>
                         <i class="bi bi-code-slash"></i>
-                        <h3>Desenvolvimento de Software
-                            web/desktop
+                        <h3> desenvolvimento de lading page
                         </h3>
-                      
+                        </button></a>
                     </div>
-                    <div class="especialidades-box">
+                    <div class="especialidades-box"><a href="./serviços/commerce.php"><button>
                         <i class="bi bi-cart"></i>
-                        <h3>Loja online E-commerce</h3>
-                       
+                        <h3>loja virtual Ecommerce</h3>
+                        </button></a>
                     </div>
-                    <div class="especialidades-box">
+                    <div class="especialidades-box"><a href="./serviços/hospedagem.php"><button>
                         <i class="bi bi-houses-fill"></i>
                         <h3>Serviço de hospedagem</h3>
+                        </button></a>
                     </div>
-                    <div class="especialidades-box">
+                    <div class="especialidades-box"><a href="./serviços/consultoria.php"><button>
                         <i class="bi bi-wrench"></i>
                         <h3>Consultoria de TI</h3>
+                        </button></a>
                     </div>
                     
                 </div>
@@ -97,18 +113,11 @@
 
                     <div class="txt-sobre">
                         <h2>MUITO PRAZER, <span>SOMOS A ADVANCE</span></h2>
-                        <p>Nossa empresa de desenvolvimento de software iniciante está pronta para elevar sua empresa a
-                            novos patamares.
-                            Com uma equipe altamente qualificada e soluções personalizadas, garantimos resultados
-                            excepcionais que atendem
-                            às suas necessidades exclusivas.
-                            Priorizamos a colaboração com nossos clientes, garantindo transparência
-                            e comprometimento em cada etapa do processo.</p>
-                        <p> Ao escolher nossa empresa, você está optando por inovação, qualidade e um parceiro
-                            confiável para impulsionar o crescimento do seu negócio.
-                            Deixe-nos transformar suas ideias em realidade e juntos alcançaremos o sucesso desejado.</p>
-                       
-                    </div>
+                        A Advance é uma empresa de desenvolvimento de software fundada por seis alunos do Colégio Realengo como parte de um projeto de TCC. Nossa missão é transformar ideias em realidade através de softwares de alta
+                         qualidade e<br> eficiência, utilizando as mais 
+                        modernas tecnologias e metodologias ágeis para atender às necessidades específicas de nossos clientes.
+Com uma equipe<br> diversa e dedicada, combinamos criatividade, técnica e compromisso para entregar produtos que superem as 
+expectativas. Na Advance, acreditamos<br> no poder da inovação e estamos preparados para liderar a transformação<br> digital. Juntos, podemos construir o amanhã.
                 </div>
             </div>
         </section>
@@ -244,7 +253,7 @@
                       
                     </div>
                     <div class="card">
-                      <img src="imagens/david.jpeg" class="card-img-top" alt="...">
+                      <img src="./imagens/david.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h3 class="card-title"><u>David Alves</u></h3>
                         <p class="card-text">Documentador</p>
