@@ -1,17 +1,3 @@
-<?php
-include "/xampp/htdocs/TCC/conexao.php";    
-$usuario=filter_input(INPUT_POST, "usuario", FILTER_SANITIZE_STRING);
-$CPF=filter_input(INPUT_POST, "CPF", FILTER_SANITIZE_STRING);
-$email=filter_input(INPUT_POST, "email", FILTER_SANITIZE_STRING);
-$numero=filter_input(INPUT_POST, "numero", FILTER_SANITIZE_STRING);
-$senha=filter_input(INPUT_POST, "senha", FILTER_SANITIZE_STRING);
-
-if ($senha === filter_input(INPUT_POST, "senha2", FILTER_SANITIZE_STRING)) {
-    $result_usuario="INSERT INTO cliente (usuario, CPF, email, numero, senha) VALUES ('$usuario', '$CPF', '$email', '$numero', '$senha')";
-    $SQL=mysqli_query($conn, $result_usuario);
-}
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 

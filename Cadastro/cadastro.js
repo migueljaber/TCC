@@ -16,7 +16,7 @@ function validarFormulario() {
         return false;
     }
 
-    if (usuario.length > 28) {
+    if (usuario.length > 15) {
         alert("O nome de usuário não pode ter mais de 28 caracteres.");
         return false;
     }
