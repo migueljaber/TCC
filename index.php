@@ -1,3 +1,56 @@
+<?php
+// Verifica se o método de requisição é POST
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+    // Inclui o arquivo de conexão
+    include "/xampp/htdocs/TCC/conexao.php";
+
+    // Filtra e sanitiza as entradas
+    $usuario = filter_input(INPUT_POST, "usuario", FILTER_SANITIZE_STRING);
+    $CPF = filter_input(INPUT_POST, "CPF", FILTER_SANITIZE_STRING);
+    $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+    $numero = filter_input(INPUT_POST, "numero", FILTER_SANITIZE_STRING);
+    $senha = filter_input(INPUT_POST, "senha", FILTER_SANITIZE_STRING);
+    $senha2 = filter_input(INPUT_POST, "senha2", FILTER_SANITIZE_STRING);
+
+    // Verifica se as senhas coincidem
+    if ($senha === $senha2) {
+        
+        // Prepara a consulta usando prepared statement
+        $stmt = $conn->prepare("INSERT INTO cliente (usuario, CPF, email, numero, senha) VALUES (?, ?, ?, ?, ?)");
+        
+        // Verifica se a preparação da consulta foi bem-sucedida
+        if ($stmt) {
+            
+            // Hash da senha
+            $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
+
+            // Bind dos parâmetros e execução da consulta
+            $stmt->bind_param("sssss", $usuario, $CPF, $email, $numero, $senha_hash);
+            $stmt->execute();
+
+            // Verifica se a consulta foi executada com sucesso
+            if ($stmt->affected_rows > 0) {
+                echo "Usuário registrado com sucesso.";
+            } else {
+                echo "Erro ao registrar o usuário.";
+            }
+
+            // Fecha o statement
+            $stmt->close();
+        } else {
+            echo "Erro na preparação da consulta.";
+        }
+    } else {
+        echo "As senhas não coincidem.";
+    }
+
+    // Fecha a conexão
+    $conn->close();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -8,7 +61,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="inicio.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="script.js" defer ></script>
 
@@ -16,7 +69,7 @@
 
 </head>
 
-<body class="bg">
+<body>
     <header id="header">
         <div class="interface">
             <div class="logo">
@@ -35,7 +88,7 @@
             </nav>
             <div class="advance-contato">
                 <li><a href="#formulario"></a></li>
-                <a href="./Cadastro/cadastro.php">
+                <a href="./Cadastro/login.php">
                 <button><i class="bi bi-person-circle"></i></button>
                 </a>
             </div>
@@ -100,10 +153,10 @@
                     <div class="txt-sobre">
                         <h2>MUITO PRAZER, <span>SOMOS A ADVANCE</span></h2>
                         A Advance é uma empresa de desenvolvimento de software fundada por seis alunos do Colégio Realengo como parte de um projeto de TCC. Nossa missão é transformar ideias em realidade através de softwares de alta
-                         qualidade e<br> eficiência, utilizando as mais 
+                         qualidade e eficiência, utilizando as mais 
                         modernas tecnologias e metodologias ágeis para atender às necessidades específicas de nossos clientes.
-Com uma equipe<br> diversa e dedicada, combinamos criatividade, técnica e compromisso para entregar produtos que superem as 
-expectativas. Na Advance, acreditamos<br> no poder da inovação e estamos preparados para liderar a transformação<br> digital. Juntos, podemos construir o amanhã.
+Com uma equipe diversa e dedicada, combinamos criatividade, técnica e compromisso para entregar produtos que superem as 
+expectativas. Na Advance, acreditamos no poder da inovação e estamos preparados para liderar a transformação digital. Juntos, podemos construir o amanhã.
                 </div>
             </div>
         </section>

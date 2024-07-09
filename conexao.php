@@ -2,8 +2,8 @@
     $servidor="localhost";
     $usuario="root";
     $senha="";
-    $dbname="tcc";
+    $dbname="TCC";
 
-$conn=mysqli_connect($servidor, $usuario, $senha, $dbname);
+$conn=mysqli_connect($servidor,$usuario,$senha,$dbname);
     
 ?>
