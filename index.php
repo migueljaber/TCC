@@ -1,56 +1,3 @@
-<?php
-// Verifica se o método de requisição é POST
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    
-    // Inclui o arquivo de conexão
-    include "/xampp/htdocs/TCC/conexao.php";
-
-    // Filtra e sanitiza as entradas
-    $usuario = filter_input(INPUT_POST, "usuario", FILTER_SANITIZE_STRING);
-    $CPF = filter_input(INPUT_POST, "CPF", FILTER_SANITIZE_STRING);
-    $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
-    $numero = filter_input(INPUT_POST, "numero", FILTER_SANITIZE_STRING);
-    $senha = filter_input(INPUT_POST, "senha", FILTER_SANITIZE_STRING);
-    $senha2 = filter_input(INPUT_POST, "senha2", FILTER_SANITIZE_STRING);
-
-    // Verifica se as senhas coincidem
-    if ($senha === $senha2) {
-        
-        // Prepara a consulta usando prepared statement
-        $stmt = $conn->prepare("INSERT INTO cliente (usuario, CPF, email, numero, senha) VALUES (?, ?, ?, ?, ?)");
-        
-        // Verifica se a preparação da consulta foi bem-sucedida
-        if ($stmt) {
-            
-            // Hash da senha
-            $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
-
-            // Bind dos parâmetros e execução da consulta
-            $stmt->bind_param("sssss", $usuario, $CPF, $email, $numero, $senha_hash);
-            $stmt->execute();
-
-            // Verifica se a consulta foi executada com sucesso
-            if ($stmt->affected_rows > 0) {
-                echo "Usuário registrado com sucesso.";
-            } else {
-                echo "Erro ao registrar o usuário.";
-            }
-
-            // Fecha o statement
-            $stmt->close();
-        } else {
-            echo "Erro na preparação da consulta.";
-        }
-    } else {
-        echo "As senhas não coincidem.";
-    }
-
-    // Fecha a conexão
-    $conn->close();
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -61,9 +8,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="inicio.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="inc.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="script.js" defer ></script>
+    <script src="javascript.js" defer ></script>
 
     <title>Advance</title>
 
@@ -74,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="interface">
             <div class="logo">
                 <a href="#">
-                    <img width="100px" height="100px" src="imagens/logo.1.png" alt="logo">
+                    <img width="100px" height="100px" src="img/logo.1.png" alt="logo">
                 </a>
             </div>
             <nav class="menu desktop">
@@ -147,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
-                        <img src="imagens/logo.1.png">
+                        <img src="img/logo.1.png">
                     </div>
 
                     <div class="txt-sobre">
@@ -239,15 +187,15 @@ expectativas. Na Advance, acreditamos no poder da inovação e estamos preparado
             </div>
         </section>
     
-        <h2 class="titulo">NOSSA <span>EQUIPE</span></h2>
+        
       
         
         <section class="equipe" id= "equipe">
             
-            
+        <h2 class="titulo">NOSSA <span>EQUIPE</span></h2>
                 <div class="card-group">
                     <div class="card">
-                      <img src="imagens/Andrei.jpeg" class="card-img-top" alt="...">
+                      <img src="img/Andrei.jpeg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h3 class="card-title"><u>Andrei Sousa</u></h3>
                         <p class="card-text">Desenvolvedor</p>
@@ -256,7 +204,7 @@ expectativas. Na Advance, acreditamos no poder da inovação e estamos preparado
                     
                     </div>
                     <div class="card">
-                      <img src="./imagens/André.jpg" class="card-img-top" alt="...">
+                      <img src="./img/André.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h3 class="card-title"><u>Carlos André</u></h3>
                         <p class="card-text">Auxiliar de desenvolvimento</p>
@@ -264,7 +212,7 @@ expectativas. Na Advance, acreditamos no poder da inovação e estamos preparado
                       
                     </div>
                     <div class="card">
-                      <img src="./imagens/Luiz.jpg" class="card-img-top" alt="...">
+                      <img src="./img/Luiz.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h3 class="card-title"><u>Luís Gabriel</u></h3>
                         <p class="card-text">Mídias sociais</p>
@@ -275,7 +223,7 @@ expectativas. Na Advance, acreditamos no poder da inovação e estamos preparado
 
                   <div class="card-group">
                     <div class="card">
-                      <img src="./imagens/Miguel.png" class="card-img-top" alt="...">
+                      <img src="./img/Miguel.png" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h3 class="card-title"><u>Miguel Jaber</u></h3>
                         <p class="card-text">Programador </p>
@@ -284,7 +232,7 @@ expectativas. Na Advance, acreditamos no poder da inovação e estamos preparado
                     
                     </div>
                     <div class="card">
-                      <img src="./imagens/Lucas.png" class="card-img-top" alt="...">
+                      <img src="./img/Lucas.png" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h3 class="card-title"><u>Lucas Laybenith</u></h3>
                         <p class="card-text">Designer</p>
@@ -292,7 +240,7 @@ expectativas. Na Advance, acreditamos no poder da inovação e estamos preparado
                       
                     </div>
                     <div class="card">
-                      <img src="./imagens/david.jpg" class="card-img-top" alt="...">
+                      <img src="./img/david.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h3 class="card-title"><u>David Alves</u></h3>
                         <p class="card-text">Documentador</p>

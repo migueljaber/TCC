@@ -1,0 +1,552 @@
+/* estilo geral */
+*{
+
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    height:100vh;
+	overflow:auto;
+    background-image: url(../TCC/img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+p.txt {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.advance-contato button {
+    padding: 5px 30px;
+    font-size: 35px;
+    font-weight: 600;
+    background-color: #128f81;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .2s;
+}
+h2.titulo{
+       color: white;
+       font-size: 36px;
+       text-align: center;
+
+}
+h2.titulo span{
+    color: #128f81;
+}
+
+/* estilo cabeçalho */
+
+header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: .5s;
+        background-color: #2c2c2c;
+        padding: 5px 4%;
+}
+
+
+
+
+header > .interface {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+}
+header a{
+    color: white;
+    text-decoration: none;
+    display:inline-block;
+    transition: .2s;
+    font-size: 20px;
+
+
+
+}
+header a:hover{
+
+     font-family: "poppins", sans-serif ;
+     transform: scale(1.20);
+     color: #128f81;
+}
+
+header nav ul{
+   list-style-type: none;
+}
+
+header nav ul li{
+      display: inline-block;
+      padding: 0 40px;
+
+}
+
+
+/*ESTILO DO TOPO DO SITE */
+section.inicio{
+    padding: 150px 4%;
+      gap: 20PX;
+}
+section.inicio .flex{
+    align-content: center;
+    justify-content: center;
+     gap: 20px;
+}
+
+.inicio h1{
+    color: white;
+    font-size: 38px;
+    line-height: 40px;
+     text-align: center;
+     padding-top: 50px;
+}
+.inicio .txt-topo-site h1 span{
+    color: #128f81;
+    font-family: popp;
+
+}
+.inicio .txt-topo-site p{
+    color: white;
+    margin: 50px 0;
+    padding-top: 70px;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+.inicio .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+header .advance-contato button{
+    background-color: #2c2c2c;
+    box-shadow: 0px 0px 8px #2c2c2c ;
+    transform: scale(1.20);
+ }
+ header .advance-contato button i{
+    color: #128f81;
+ }
+
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+
+}
+
+
+/* ESTILO DAS ESPECIALIDADES */
+section.especialidades{
+    padding: 5px 4%;
+}
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box button{
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: 55px;
+    transition: 2s;
+    justify-content: space-between;
+}
+.especialidades .especialidades-box:hover button{
+    transform: scale(1.10);
+    box-shadow: 0 0 30px #ffffff;
+
+
+}
+.especialidades .especialidades-box i{
+    font-size: 65px;
+    color: #128f81;
+   
+}
+.especialidades .especialidades-box button h3{
+    font-size: 30px;
+    margin: 15px 0;
+    color: white;
+  
+    
+}
+.especialidades .especialidades-box button p{
+    font-size: 27px;
+    margin: 10px 0;
+}
+.especialidades .especialidades-box button{
+    background-color: black;
+  
+}
+/* ESTILO DO SOBRE */
+section.sobre{
+    padding: 160px 4%;
+}
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+    box-shadow: 20px 20px 20px #333232;
+}
+.sobre .img-sobre{
+    display: block;
+}
+.sobre .txt-sobre{
+    color: white;
+    justify-content: space-between;
+}
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.sobre .txt-sobre h2 span{
+    color: #128f81;
+    display: block;
+}
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+    text-align-last: left; /* Alinha a última linha à esquerda */
+}
+
+.sobre .txt-sobre .advance-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #128f81;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+    justify-content: space-between;
+}
+/*ESTILO DO FORMULARIO DE CONTATO*/
+section.formulario{
+    padding: 175px 4%;
+
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top:40px;
+}
+form input, form textarea{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 500px;
+}
+
+form .advance-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+form .advance-enviar input{
+    width: 120px;
+    background-color: #128f81;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/*estilo rodape*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+footer{
+    background-color: #128f81;
+    padding: 50px 0;
+}
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+.footer-col .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i{
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover{
+    color: #415aca;
+    background-color: white;
+}
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #128f81;
+}
+.footer-col .form-sub input::placeholder{
+    color: white;
+}
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #415aca;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;        
+}
+/* Responsivo */
+@media (max-width: 800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+    }
+}
+
+.main{
+    justify-content: center;
+    display: flex;
+    
+}
+
+.card{
+    margin: 50px;
+    background-color: #6d6d6d65;
+    color: #ffffff;
+    width: 450px;
+    height: 400px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+}
+
+
+.card>h1{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.card>h2{
+    font-size: 25px;
+    text-align: center;
+    color: #128f81;
+    padding: 10px;
+}
+.card>p{
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    gap: 10px;
+    padding: 20px 20px;
+}
+
+.dev-2{
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+}
+
+.card{
+    margin: 50px;
+    background-color: #6d6d6d65;
+    color: #ffffff;
+    width: 350px;
+    height: 390px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    justify-content: space-between;
+}
+
+
+.card>h1{
+    font-size: 25px;
+    padding: 5px;
+}
+
+.card>h2{
+    font-size: 25px;
+    text-align: center;
+    color: #128f81;
+    padding: 5px;
+}
+.card>p{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    gap: 5px;
+    padding: 20px 20px;
+    text-align: justify;
+}
+
+.motivos .col{
+    margin: 30px;
+    color: white;
+    width: 400px;
+    height: 100px;
+    text-align: justify;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.motivos .col p{
+    padding: 30px;
+}
+
+.container{
+    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+}
+.container i{
+    font-size: 60px;
+    color: #128f81;
+}
+section.motivos{
+    padding: 100px;
+}
+
+.motivos>p{
+    color: wheat;
+    font-size: 20;
+    text-align: center;
+    padding: 5px;
+}
+
+.interface .titulo h2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 36px;
+    padding: 40px;
+    
+}
+.interface .titulo span{
+    color: #128f81;
+}
+
+.card-group .card img{
+    height: 300px;
+    width: 300px;
+    padding-top: 20px;
+}
+ .card-group .card-body p{
+    color: wheat;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: nowrap; /* Evita que as cartas quebrem para uma nova linha */
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal se o conteúdo ultrapassar a largura do contêiner */
+    justify-content: center;
+}
+
+.card {
+    flex: 0 0 auto; /* Define o tamanho inicial das cartas para que elas não cresçam ou encolham */
+    margin-right: 15px; /* Adiciona espaçamento entre as cartas */
+    justify-content: center;
+}
+ .especialidades, .sobre, .motivos, .metodologia, .equipe, .formulario{
+    visibility: hidden;
+}
