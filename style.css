@@ -54,50 +54,52 @@ h2.titulo span{
 
 /* estilo cabeçalho */
 
+/* Estiliza o header para que fique fixo no topo e tenha uma cor de fundo sólida */
 header {
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        transition: .5s;
-        background-color: #2c2c2c;
-        padding: 5px 4%;
+    width: 100%;
+    position: fixed; /* Fixa o header na parte superior da tela */
+    top: 0;
+    left: 0;
+    background-color: #2c2c2c; /* Cor de fundo sólida */
+    padding: 5px 4%;
+    z-index: 1000; /* Certifica-se de que o header esteja acima de outros elementos */
+    transition: background-color 0.5s ease; /* Adiciona uma transição suave para a cor de fundo */
 }
 
-
-
-
+/* Estiliza o conteúdo dentro do header */
 header > .interface {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-header a{
+
+/* Estiliza os links dentro do header */
+header a {
     color: white;
     text-decoration: none;
-    display:inline-block;
-    transition: .2s;
+    display: inline-block;
+    transition: color 0.2s, transform 0.2s;
     font-size: 20px;
-
-
-
-}
-header a:hover{
-
-     font-family: "poppins", sans-serif ;
-     transform: scale(1.20);
-     color: #128f81;
 }
 
-header nav ul{
-   list-style-type: none;
+/* Adiciona efeitos ao passar o mouse sobre os links */
+header a:hover {
+    font-family: "Poppins", sans-serif;
+    transform: scale(1.20);
+    color: #128f81;
 }
 
-header nav ul li{
-      display: inline-block;
-      padding: 0 40px;
+/* Remove os marcadores da lista e ajusta o layout dos itens de navegação */
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
+/* Estiliza os itens da lista de navegação */
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
 }
 
 
@@ -157,48 +159,112 @@ header .advance-contato button{
 }
 
 
-/* ESTILO DAS ESPECIALIDADES */
-section.especialidades{
-    padding: 5px 4%;
-}
-section.especialidades .flex {
-    gap: 60px;
+
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #128f81; /* Cor de fundo do site */
 }
 
-.especialidades .especialidades-box button{
-    color: white;
-    padding: 25px;
-    border-radius: 20px;
-    margin-top: 55px;
-    transition: 2s;
-    justify-content: space-between;
+.services {
+    padding: 50px 20px;
+     background-color: #fff;
+    position: relative;
+    overflow: hidden; /* Garante que o gradiente de sombra não se estenda além da seção */
 }
-.especialidades .especialidades-box:hover button{
-    transform: scale(1.10);
-    box-shadow: 0 0 30px #ffffff;
 
-
-}
-.especialidades .especialidades-box i{
-    font-size: 65px;
-    color: #128f81;
-   
-}
-.especialidades .especialidades-box button h3{
-    font-size: 30px;
-    margin: 15px 0;
-    color: white;
-  
+/* Sombra suave no início e no fim da seção */
+.services::before,
+.services::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
     
+
 }
-.especialidades .especialidades-box button p{
-    font-size: 27px;
-    margin: 10px 0;
+
+.services::after {
+    top: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 100%);
 }
-.especialidades .especialidades-box button{
-    background-color: black;
-  
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    backdrop-filter: blur(10px);
 }
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dois cartões por linha */
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-image {
+   width: 100%;
+    height: 350px;
+    display: block;
+}
+
+.service-content {
+    padding: 20px;
+}
+
+.service-title {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.service-description {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Animação suave ao rolar para dentro da visão */
+.service-card.in-view {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.service-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
 /* ESTILO DO SOBRE */
 section.sobre{
     padding: 160px 4%;
@@ -258,7 +324,7 @@ form{
 }
 form input, form textarea{
     width: 100%;
-    background: transparent;
+    background: #fff;
     border: 0;
     outline: 0;
     padding: 20px 15px;
@@ -550,3 +616,17 @@ section.motivos{
  .especialidades, .sobre, .motivos, .metodologia, .equipe, .formulario{
     visibility: hidden;
 }
+
+/* Adicione isso ao seu CSS */
+
+.in-view {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.service-card {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
