@@ -1,5 +1,5 @@
 // Importando a biblioteca ScrollReveal
-// Se você estiver usando um ambiente onde não é possível importar diretamente, adicione o script diretamente no HTML.
+// Certifique-se de que o ScrollReveal foi carregado corretamente antes de usar.
 
 window.sr = ScrollReveal({ reset: true });
 
@@ -41,25 +41,27 @@ sr.reveal('.formulario', {
 });
 
 // Função para animação de texto
-const el = document.querySelector("h1");
-const text = "ADVANCE, ONDE A INOVAÇÃO TRANSFORMA IDEIAS EM FUTURO.";
-const interval = 100;
-
-function showText(el, text, interval) {
-    const char = text.split("").reverse();
-    const typer = setInterval(() => {
-        if (!char.length) {
-            return clearInterval(typer);
-        }
-        const next = char.pop();
-        el.innerHTML += next;
-    }, interval);
-}
-
-showText(el, text, interval);
-
-// IntersectionObserver para os cartões de serviço
 document.addEventListener('DOMContentLoaded', function() {
+    const el = document.querySelector("h1");
+    if (el) {
+        const text = "ADVANCE, ONDE A INOVAÇÃO TRANSFORMA IDEIAS EM FUTURO.";
+        const interval = 100;
+
+        function showText(el, text, interval) {
+            const char = text.split("").reverse();
+            const typer = setInterval(() => {
+                if (!char.length) {
+                    return clearInterval(typer);
+                }
+                const next = char.pop();
+                el.innerHTML += next;
+            }, interval);
+        }
+
+        showText(el, text, interval);
+    }
+
+    // IntersectionObserver para os cartões de serviço
     const serviceCards = document.querySelectorAll('.service-card');
 
     const observerOptions = {
@@ -84,7 +86,6 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(card);
     });
 });
-
 
 
 

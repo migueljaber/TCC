@@ -8,13 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-        <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="script.js" defer ></script>
-
     <title>Advance</title>
-
 </head>
 
 <body>
@@ -27,151 +23,148 @@
             </div>
             <nav class="menu desktop">
                 <ul>
-                <li><a href="#inicio">Ínicio</a></li>
+                    <li><a href="#inicio">Início</a></li>
                     <li><a href="#sobre">Sobre nós</a></li>
                     <li><a href="#especialidades">Especialidades</a></li>
                     <li><a href="#metodologia">Metodologia</a></li>
-                    
                 </ul>
             </nav>
             <div class="advance-contato">
-                <li><a href="#formulario"></a></li>
                 <a href="./Cadastro/login.php">
-                <button><i class="bi bi-person-circle"></i></button>
+                    <button><i class="bi bi-person-circle"></i></button>
                 </a>
             </div>
         </div>
     </header>
-        <main>
-            <section class="inicio" id="inicio">
-                <div class="interface">
-                    <div class="flex">
-                        <div class="txt-topo-site">
-                            <h1></h1>
-                            <p class="txt">Tecnologia e negócios andam lado a lado. Com uma combinação de um design sofisticado, aplicabilidade intuitiva, otimização para resultados e uma ótima equipe, estamos prontos para criar a presença online dos seus negócios</p>
-                           
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <section class="services" id="services">
-                <div class="container">
-                    <h2 class="section-title">Nossos Serviços</h2>
-                    <div class="services-grid">
-                        <div class="service-card">
-                            <img src="../TCC/img/consultoria.jfif" alt="Serviço 1" class="service-image">
-                            <div class="service-content">
-                                <h3 class="service-title"> Consultoria e Estratégia de Tecnologia</h3>
-                              
-                            </div>
-                        </div>
-                        <div class="service-card">
-                            <img src="../TCC/img/dessoft.jfif" alt="Serviço 2" class="service-image">
-                            <div class="service-content">
-                                <h3 class="service-title">Desenvolvimento de software sob medida</h3>
-                                
-                            </div>
-                        </div>
-                        <div class="service-card">
-                            <img src="../TCC/img/designe.jfif" alt="Serviço 3" class="service-image">
-                            <div class="service-content">
-                                <h3 class="service-title">Design e Experiência do Usuário (UX/UI)</h3>
-                               
-                            </div>
-                        </div>
-                        <div class="service-card">
-                            <img src="../TCC/img/banco.jfif" alt="Serviço 4" class="service-image">
-                            <div class="service-content">
-                                <h3 class="service-title">Desenvolvimento de Sistemas de Dados</h3>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <section class="sobre" id="sobre">
-                <div class="interface">
-                    <div class="flex">
-                        <div class="img-sobre">
-                            <img src="img/logo.1.png" alt="Sobre nós">
-                        </div>
-                        <div class="txt-sobre">
-                            <h2>MUITO PRAZER, <span>SOMOS A ADVANCE</span></h2>
-                            <p>A Advance é uma empresa de desenvolvimento de software fundada por seis alunos do Colégio Realengo como parte de um projeto de TCC. Nossa missão é transformar ideias em realidade através de softwares de alta qualidade e eficiência, utilizando as mais modernas tecnologias e metodologias ágeis para atender às necessidades específicas de nossos clientes. Com uma equipe diversa e dedicada, combinamos criatividade, técnica e compromisso para entregar produtos que superem as expectativas. Na Advance, acreditamos no poder da inovação e estamos preparados para liderar a transformação digital. Juntos, podemos construir o amanhã.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <section class="motivos">
-                <div class="motivos">
-                    
-                    <h2 class="titulo">A EMPRESA MAIS <span>INOVADORA</span> DO MERCADO</h2>
-                    <p>Compreenda as razões pelas quais sua empresa se beneficiará ao contar com nossa equipe de tecnologia.</p>
-                    <div class="container">
-                        <div class="colunas">
-                            <div class="col col1">
-                                <i class="bi bi-brush"></i>
-                        <h3>Design</h3>
-                        <p>A equipe de design UX da nossa empresa de software é altamente inovadora, focada em criar experiências digitais intuitivas e envolventes. Combinando criatividade e expertise técnica, entregamos soluções que elevam o padrão da indústria, proporcionando aos usuários uma jornada memorável e eficiente.</p>
-                
-                        <i class="bi bi-globe-americas"></i>
-                        <h3>Desenvolvimento completo</h3>
-                        <p>Nossa empresa de software oferece um desenvolvimento completo de ideias até publicações, garantindo soluções digitais de ponta com eficiência e qualidade excepcionais.</p>
-                    </div>
-                    <div class="col col2">
-                        <i class="bi bi-people"></i>
-                        <h3>Time</h3>
-                        <p>Na nossa empresa, o time multidisciplinar se destaca pela combinação de habilidades em programação, design, gerenciamento de projetos e qualidade. Essa organização eficaz promove uma abordagem holística na resolução de desafios complexos, impulsionando a inovação e a entrega de soluções de alto nível para os clientes.</p>
-                    
-                        <i class="bi bi-skip-forward"></i>
-                        <h3>Entregas ágeis</h3>
-                        <p>Nossa empresa de software adota métodos ágeis para desenvolver produtos com eficiência e flexibilidade, garantindo entregas rápidas e alinhadas às necessidades do cliente.</p>
-                    </div>
-                    </div><!--colunas-->
-                </div><!--container-->
-                </div><!--motivos-->
-               </section>
 
-    
-            <section class="metodologia" id="metodologia">
-                <div class="desenvolvimento">
-                    <h2 class="titulo">COMO <span>CONCRETIZAMOS</span> NOSSAS<BR>IDEIAS EM <span>CÓDIGOS</span></h2>
-                    <div class="main">
-                        <div class="card card1">
-                            <h1>1 ETAPA</h1>
-                            <h2>ANÁLISE DE REQUISITOS</h2>
-                            <p>Realizamos uma análise de requisitos completa para entender as necessidades dos clientes, identificando requisitos funcionais e não funcionais essenciais. Trabalhamos em colaboração para validar e refinar esses requisitos, assegurando que cada solução desenvolvida atenda às expectativas e objetivos de negócio.</p>
-                        </div>
-                        <div class="card card1">
-                            <h1>2 ETAPA</h1>
-                            <h2>DESIGN</h2>
-                            <p>Nossa equipe prioriza o design centrado no usuário para criar interfaces intuitivas e atraentes. Com foco na experiência do usuário, nossos designs são meticulosamente elaborados para garantir facilidade de uso e eficiência. Buscamos a harmonia entre estética e funcionalidade em cada detalhe de nossos produtos.</p>
-                        </div>
-                        <div class="card card1">
-                            <h1>3 ETAPA</h1>
-                            <h2>DESENVOLVIMENTO</h2>
-                            <p>Nesse processo é a hora da mão na massa, é pautado pela excelência técnica e eficiência operacional. Utilizamos metodologias ágeis para garantir entregas rápidas e iterativas, adaptando-nos continuamente às necessidades do cliente. A qualidade e a inovação são pilares fundamentais em cada linha de código que escrevemos.</p>
+    <main>
+        <section class="inicio" id="inicio">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1></h1>
+                        <p class="txt">Tecnologia e negócios andam lado a lado. Com uma combinação de um design sofisticado, aplicabilidade intuitiva, otimização para resultados e uma ótima equipe, estamos prontos para criar a presença online dos seus negócios.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="../TCC/img/consultoria.jfif" alt="Serviço 1" class="service-image">
+                        <div class="service-content">
+                            <h3 class="service-title">Consultoria e Estratégia de Tecnologia</h3>
                         </div>
                     </div>
-                    <div class="dev-2">
-                        <div class="card card1">
-                            <h1>4 ETAPA</h1>
-                            <h2>SPRINT</h2>
-                            <p>Concretizamos entregas ágeis para que você possa avaliar e certificar seu projeto em todas as fases, sem a necessidade de efetuar alterações no produto final. Nossa missão é garantir uma jornada fluida e eficaz, assegurando que seu projeto progrida sem obstáculos e atinja suas metas com qualidade excepcional.</p>
+                    <div class="service-card">
+                        <img src="../TCC/img/dessoft.jfif" alt="Serviço 2" class="service-image">
+                        <div class="service-content">
+                            <h3 class="service-title">Desenvolvimento de software sob medida</h3>
                         </div>
-                        <div class="card card1">
-                            <h1>5 ETAPA</h1>
-                            <h2>HOSPEDAGEM</h2>
-                            <p>Após a conclusão do seu projeto, oferecemos hospedagem especializada para garantir uma presença online contínua e confiável. Conte conosco para manter seu site acessível e funcionando perfeitamente, enquanto você foca no crescimento do seu negócio. Garanta uma presença online estável e eficaz com nossa hospedagem dedicada.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="../TCC/img/designe.jfif" alt="Serviço 3" class="service-image">
+                        <div class="service-content">
+                            <h3 class="service-title">Design e Experiência do Usuário (UX/UI)</h3>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="../TCC/img/banco.jfif" alt="Serviço 4" class="service-image">
+                        <div class="service-content">
+                            <h3 class="service-title">Desenvolvimento de Sistemas de Dados</h3>
                         </div>
                     </div>
                 </div>
-            </section>
-    
-            <section class="equipe" id="equipe">
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="img/logo.1.png" alt="Sobre nós">
+                    </div>
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOMOS A ADVANCE</span></h2>
+                        <p>A Advance é uma empresa de desenvolvimento de software fundada por seis alunos do Colégio Realengo como parte de um projeto de TCC. Nossa missão é transformar ideias em realidade através de softwares de alta qualidade e eficiência, utilizando as mais modernas tecnologias e metodologias ágeis para atender às necessidades específicas de nossos clientes. Com uma equipe diversa e dedicada, combinamos criatividade, técnica e compromisso para entregar produtos que superem as expectativas. Na Advance, acreditamos no poder da inovação e estamos preparados para liderar a transformação digital. Juntos, podemos construir o amanhã.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="motivos">
+            <div class="motivos">
+                <h2 class="titulo">A EMPRESA MAIS <span>INOVADORA</span> DO MERCADO</h2>
+                <p>Compreenda as razões pelas quais sua empresa se beneficiará ao contar com nossa equipe de tecnologia.</p>
+                <div class="container">
+                    <div class="colunas">
+                        <div class="col col1">
+                            <i class="bi bi-brush"></i>
+                            <h3>Design</h3>
+                            <p>A equipe de design UX da nossa empresa de software é altamente inovadora, focada em criar experiências digitais intuitivas e envolventes. Combinando criatividade e expertise técnica, entregamos soluções que elevam o padrão da indústria, proporcionando aos usuários uma jornada memorável e eficiente.</p>
+
+                            <i class="bi bi-globe-americas"></i>
+                            <h3>Desenvolvimento completo</h3>
+                            <p>Nossa empresa de software oferece um desenvolvimento completo de ideias até publicações, garantindo soluções digitais de ponta com eficiência e qualidade excepcionais.</p>
+                        </div>
+                        <div class="col col2">
+                            <i class="bi bi-people"></i>
+                            <h3>Time</h3>
+                            <p>Na nossa empresa, o time multidisciplinar se destaca pela combinação de habilidades em programação, design, gerenciamento de projetos e qualidade. Essa organização eficaz promove uma abordagem holística na resolução de desafios complexos, impulsionando a inovação e a entrega de soluções de alto nível para os clientes.</p>
+
+                            <i class="bi bi-skip-forward"></i>
+                            <h3>Entregas ágeis</h3>
+                            <p>Nossa empresa de software adota métodos ágeis para desenvolver produtos com eficiência e flexibilidade, garantindo entregas rápidas e alinhadas às necessidades do cliente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="metodologia" id="metodologia">
+            <div class="desenvolvimento">
+                <h2 class="titulo">COMO <span>CONCRETIZAMOS</span> NOSSAS<br>IDEIAS EM <span>CÓDIGOS</span></h2>
+                <div class="main">
+                    <div class="card card1">
+                        <h1>1ª ETAPA</h1>
+                        <h2>ANÁLISE DE REQUISITOS</h2>
+                        <p>Realizamos uma análise de requisitos completa para entender as necessidades dos clientes, identificando requisitos funcionais e não funcionais essenciais. Trabalhamos em colaboração para validar e refinar esses requisitos, assegurando que cada solução desenvolvida atenda às expectativas e objetivos de negócio.</p>
+                    </div>
+                    <div class="card card1">
+                        <h1>2ª ETAPA</h1>
+                        <h2>DESIGN</h2>
+                        <p>Nossa equipe prioriza o design centrado no usuário para criar interfaces intuitivas e atraentes. Com foco na experiência do usuário, nossos designs são meticulosamente elaborados para garantir facilidade de uso e eficiência. Buscamos a harmonia entre estética e funcionalidade em cada detalhe de nossos produtos.</p>
+                    </div>
+                    <div class="card card1">
+                        <h1>3ª ETAPA</h1>
+                        <h2>DESENVOLVIMENTO</h2>
+                        <p>Nesse processo, é a hora da mão na massa, pautado pela excelência técnica e eficiência operacional. Utilizamos metodologias ágeis para garantir entregas rápidas e iterativas, adaptando-nos continuamente às necessidades do cliente. A qualidade e a inovação são pilares fundamentais em cada linha de código que escrevemos.</p>
+                    </div>
+                </div>
+                <div class="dev-2">
+                    <div class="card card1">
+                        <h1>4ª ETAPA</h1>
+                        <h2>SPRINT</h2>
+                        <p>Concretizamos entregas ágeis para que você tenha previsibilidade dos avanços de forma mais clara.</p>
+                    </div>
+                    <div class="card card1">
+                        <h1>5ª ETAPA</h1>
+                        <h2>IMPLANTAÇÃO</h2>
+                        <p>Na etapa de implantação, realizamos a entrega e configuração do software no ambiente de produção. Nossa equipe se dedica a garantir que a transição seja suave e que o sistema esteja completamente funcional. Fornecemos suporte contínuo para assegurar o sucesso do cliente na utilização da solução.</p>
+                    </div>
+                    <div class="card card1">
+                        <h1>6ª ETAPA</h1>
+                        <h2>SUPORTE</h2>
+                        <p>Após a implantação, oferecemos suporte contínuo para garantir o funcionamento perfeito e atender a qualquer necessidade adicional que possa surgir. Estamos comprometidos em garantir o sucesso a longo prazo dos nossos clientes, fornecendo assistência técnica, atualizações e manutenção.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipe" id="equipe">
                 <h2 class="titulo">NOSSA <span>EQUIPE</span></h2>
                 <div class="card-group">
                     <div class="card">
@@ -221,7 +214,7 @@
                     </div>
                 </div>
             </section>
-    
+
             <section class="formulario" id="formulario">
                 <div class="interface">
                     <h2 class="titulo">FALE <span>CONOSCO</span></h2>
@@ -233,48 +226,17 @@
                     </form>
                 </div>
             </section>
-        </main>
-        <script src="script.js"></script>
-  
-    
+    </main>
 
     <footer>
-        <div class="container-footer">
-            <div class="row-footer">
-                <div class="footer-col">
-                    <h4>Empresa</h4>
-                    <ul>
-                        <li><a href="#">Ínicio</a></li>
-                        <li><a href="">Sobre nós</a></li>
-                        <li><a href="">Metodologia</a></li>
-                        <li><a href="">Equipe</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Obter ajuda</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Status De Pedido</a></li>
-                        <li><a href="#">Opções De Pagamento</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                </div>
-
-                <div class="footer-col">
-                    
-
-                    <div class="medias-socias">
-                            <a href="#https://www.instagram.com/advance.dev/"> <i class="bi bi-instagram"></i>
-                                <a href="#https://x.com/AdvanceDesSoft"> <i class="bi bi-twitter"></i> </a>
-                    </div>
-
-                </div>
-            </div>
+        <div class="container">
+            <p>&copy; 2024 Advance. Todos os direitos reservados.</p>
         </div>
     </footer>
-    <script src="menu.js"></script>
+
+    <!-- Carregamento dos scripts no final do body -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
