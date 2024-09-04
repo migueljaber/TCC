@@ -50,36 +50,44 @@
         </section>
 
         <section class="services" id="services">
-            <div class="container">
-                <h2 class="section-title">Nossos Serviços</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <img src="../TCC/img/consultoria.jfif" alt="Serviço 1" class="service-image">
-                        <div class="service-content">
-                            <h3 class="service-title">Consultoria e Estratégia de Tecnologia</h3>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <img src="../TCC/img/dessoft.jfif" alt="Serviço 2" class="service-image">
-                        <div class="service-content">
-                            <h3 class="service-title">Desenvolvimento de software sob medida</h3>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <img src="../TCC/img/designe.jfif" alt="Serviço 3" class="service-image">
-                        <div class="service-content">
-                            <h3 class="service-title">Design e Experiência do Usuário (UX/UI)</h3>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <img src="../TCC/img/banco.jfif" alt="Serviço 4" class="service-image">
-                        <div class="service-content">
-                            <h3 class="service-title">Desenvolvimento de Sistemas de Dados</h3>
-                        </div>
-                    </div>
+    <div class="container">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="../TCC/img/consultoria.jfif" alt="Serviço 1" class="service-image">
+                <div class="service-content">
+                    <h3 class="service-title">Consultoria e Estratégia de Tecnologia</h3>
+                    <p>Desenvolva soluções tecnológicas sob medida para seu negócio com nossa consultoria. Avaliação e estratégias personalizadas por R$500.</p>
+                    <button class="btn-services">Adicionar ao carrinho</button>
                 </div>
             </div>
-        </section>
+            <div class="service-card">
+                <img src="../TCC/img/dessoft.jfif" alt="Serviço 2" class="service-image">
+                <div class="service-content">
+                    <h3 class="service-title">Desenvolvimento de software sob medida</h3>
+                    <p>Criamos soluções personalizadas para atender às suas necessidades únicas por: R$800 a R$1500. Utilizamos as linguagens HTML, CSS, PHP, JavaScript, SQL e Java para garantir a melhor tecnologia para o seu projeto.</p>
+                    <button class="btn-services">Adicionar ao carrinho</button>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="../TCC/img/designe.jfif" alt="Serviço 3" class="service-image">
+                <div class="service-content">
+                    <h3 class="service-title">Design e Experiência do Usuário (UX/UI)</h3>
+                    <p>Criamos interfaces intuitivas e atraentes para proporcionar a melhor experiência ao usuário, atendendo às suas necessidades específicas por: R$400 a R$800.</p>
+                    <button class="btn-services">Adicionar ao carrinho</button>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="../TCC/img/banco.jfif" alt="Serviço 4" class="service-image">
+                <div class="service-content">
+                    <h3 class="service-title">Desenvolvimento de Sistemas de Dados</h3>
+                    <p>Utilizamos SQL, PHP e Java para construir sistemas de dados robustos e eficientes, adaptados às suas necessidades por: R$100 a R$1600.</p>
+                    <button class="btn-services">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <section class="sobre" id="sobre">
             <div class="interface">
@@ -148,7 +156,7 @@
                     <div class="card card1">
                         <h1>4ª ETAPA</h1>
                         <h2>SPRINT</h2>
-                        <p>Concretizamos entregas ágeis para que você tenha previsibilidade dos avanços de forma mais clara.</p>
+                        <p>Na Advance, seguimos metodologias ágeis para garantir entregas contínuas e transparentes. Com isso, você acompanha o progresso de forma clara, faz ajustes rápidos quando necessário e assegura que o projeto final atenda às suas expectativas. Nossa abordagem oferece maior previsibilidade e flexibilidade, permitindo que o desenvolvimento evolua de acordo com as necessidades do seu negócio.</p>
                     </div>
                     <div class="card card1">
                         <h1>5ª ETAPA</h1>
@@ -170,21 +178,21 @@
                     <div class="card">
                         <img src="img/Andrei.jpeg" class="card-img-top" alt="Andrei Sousa">
                         <div class="card-body">
-                            <h3 class="card-title"><u>Andrei Sousa</u></h3>
+                            <h3 class="card-title">Andrei Sousa</h3>
                             <p class="card-text">Desenvolvedor</p>
                         </div>
                     </div>
                     <div class="card">
                         <img src="./img/André.jpg" class="card-img-top" alt="Carlos André">
                         <div class="card-body">
-                            <h3 class="card-title"><u>Carlos André</u></h3>
+                            <h3 class="card-title">Carlos André</h3>
                             <p class="card-text">Auxiliar de desenvolvimento</p>
                         </div>
                     </div>
                     <div class="card">
                         <img src="./img/Luiz.jpg" class="card-img-top" alt="Luís Gabriel">
                         <div class="card-body">
-                            <h3 class="card-title"><u>Luís Gabriel</u></h3>
+                            <h3 class="card-title">Luís Gabriel</h3>
                             <p class="card-text">Mídias sociais</p>
                         </div>
                     </div>
@@ -194,21 +202,21 @@
                     <div class="card">
                         <img src="./img/Miguel.png" class="card-img-top" alt="Miguel Jaber">
                         <div class="card-body">
-                            <h3 class="card-title"><u>Miguel Jaber</u></h3>
+                            <h3 class="card-title">Miguel Jaber</h3>
                             <p class="card-text">Programador</p>
                         </div>
                     </div>
                     <div class="card">
                         <img src="./img/Lucas.png" class="card-img-top" alt="Lucas Laybenith">
                         <div class="card-body">
-                            <h3 class="card-title"><u>Lucas Laybenith</u></h3>
+                            <h3 class="card-title">Lucas Laybenith</h3>
                             <p class="card-text">Designer</p>
                         </div>
                     </div>
                     <div class="card">
                         <img src="./img/david.jpg" class="card-img-top" alt="David Alves">
                         <div class="card-body">
-                            <h3 class="card-title"><u>David Alves</u></h3>
+                            <h3 class="card-title">David Alves</h3>
                             <p class="card-text">Documentador</p>
                         </div>
                     </div>

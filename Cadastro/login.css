@@ -71,6 +71,8 @@ body{
     justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
+    padding: 10px;
+    display: flex;
 }
 
 .lembrar-esqueceu label input{

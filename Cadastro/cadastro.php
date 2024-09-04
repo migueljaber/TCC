@@ -27,7 +27,7 @@ else {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cads.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="cadastro.css">
 
     <title>Cadastro</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -37,9 +37,9 @@ else {
 <body>
     <section class="formulario" id="formulario">
     <div class="interface">
-        <h2 class="titulo">CRIAR <span>CONTA</span></h2>
+        <h2 class="titulo">CADASTRO</h2>
     <div class="wrapper">
-        <h1>ENTRAR</h1>
+        <h1>CRIAR CONTA</h1>
         <form name="form_cadastro" id="form_cadastro" action="cadastro.php" method="POST" onsubmit="return validarFormulario()">
         <div class="input-box">
         <input type="text" name="usuario" id="usuario" placeholder="Usuário" maxlength="28" required>

@@ -13,18 +13,22 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:url(../img/fundo2.png) no-repeat;
+    background:url(../img/fundo.png) no-repeat;
     background-size: cover;
     background-position: center;
 
 }
-
+.interface h2{
+    text-align: center;
+    padding: 10px;
+    color: antiquewhite;
+}
 .wrapper {
     width: 400px;
     background: transparent;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    color: aliceblue;
+    color: #fff;
     border-radius: 10px;
     padding: 10px 20px;
 }

@@ -162,13 +162,6 @@ header .advance-contato button{
 
 /* styles.css */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #128f81; /* Cor de fundo do site */
-}
-
 .services {
     padding: 50px 20px;
      background-color: #fff;
@@ -205,14 +198,16 @@ body {
 .section-title {
     text-align: center;
     font-size: 2.5em;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: #333;
+    padding:10px;
 }
 
 .services-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Dois cartões por linha */
     gap: 20px;
+   
 }
 
 .service-card {
@@ -273,6 +268,7 @@ section.sobre .flex{
     align-items: center;
     gap: 60px;
     box-shadow: 20px 20px 20px #333232;
+    backdrop-filter: blur(10px);
 }
 .sobre .img-sobre{
     display: block;
@@ -280,6 +276,7 @@ section.sobre .flex{
 .sobre .txt-sobre{
     color: white;
     justify-content: space-between;
+
 }
 .sobre .txt-sobre h2{
     font-size: 40px;
@@ -294,6 +291,7 @@ section.sobre .flex{
     margin: 20px 0;
     text-align: justify;
     text-align-last: left; /* Alinha a última linha à esquerda */
+    padding-right:30px;
 }
 
 .sobre .txt-sobre .advance-social button{
@@ -475,7 +473,7 @@ footer{
 
 .card{
     margin: 50px;
-    background-color: #6d6d6d65;
+    background-color: transparent;
     color: #ffffff;
     width: 450px;
     height: 400px;
@@ -500,8 +498,9 @@ footer{
 }
 .card>p{
     font-size: 14px;
-    text-align: center;
+    text-align: left;
     color: white;
+    align-items: center;
     gap: 10px;
     padding: 20px 20px;
 }
@@ -514,7 +513,7 @@ footer{
 
 .card{
     margin: 50px;
-    background-color: #6d6d6d65;
+    background-color: transparent;
     color: #ffffff;
     width: 350px;
     height: 390px;
@@ -586,6 +585,7 @@ section.motivos{
     text-align: center;
     font-size: 36px;
     padding: 40px;
+    text-decoration: none;
     
 }
 .interface .titulo span{
@@ -600,7 +600,9 @@ section.motivos{
  .card-group .card-body p{
     color: wheat;
 }
-
+.card-group .card-body h2{
+    text-decoration: none;
+}
 .card-group {
     display: flex;
     flex-wrap: nowrap; /* Evita que as cartas quebrem para uma nova linha */
@@ -617,7 +619,6 @@ section.motivos{
     visibility: hidden;
 }
 
-/* Adicione isso ao seu CSS */
 
 .in-view {
     opacity: 1;
@@ -629,4 +630,52 @@ section.motivos{
     opacity: 0;
     transform: translateY(50px);
 }
+/* Estilos gerais para os cartões de serviço */
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
 
+.service-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 16px;
+}
+
+/* Contêiner para os botões */
+.btn-container {
+    margin-top: auto; /* Empurra o botão para o final do conteúdo */
+}
+
+/* Estilos para o botão */
+.btn-services {
+    background-color: #128f81;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    min-height: 50px; /* Define uma altura mínima para todos os botões */
+}
+
+.btn-services:hover {
+    background-color: #0c5a51;
+}
+
+.btn-services i {
+    font-size: 20px;
+    color: black;
+}
