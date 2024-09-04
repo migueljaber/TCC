@@ -9,15 +9,15 @@
 </head>
 <body>
     <div class="wrapper">
-        <form action="">
+        <form action="./valida.php">
         <h1>ENTRAR</h1>
         <div class="input-box">
-            <input type="text" placeholder="Usuário"
+            <input type="text" name="usuario" id="usuario" placeholder="Usuário"
             required>
             <box-icon type='solid' name='user'></box-icon>
         </div>
         <div class="input-box">
-            <input type="password" placeholder="Senha"
+            <input type="password" name="senha" id="senha" placeholder="Senha"
             required>
             <box-icon name='lock-alt' type='solid' ></box-icon>
         </div>
@@ -29,7 +29,7 @@
         <button type="submit" class="btn">Login</button>
 
         <div class="registrar-link">
-            <p>Não tem conta? <a href="./cadastro.php">Cadastrar</a></p>
+            <p>Não tem conta? <a href="cadastro.php">Cadastre-se</a></p>
         </div>
     </div><!--wrapper-->
 </body>

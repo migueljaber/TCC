@@ -1,11 +1,11 @@
 $(document).ready(function(){
-    $('#CPF').mask('000.000.000-00');
+    $('#cpf').mask('000.000.000-00');
     $('#numero').mask('(00) 00000-0000');
 });
 
 function validarFormulario() {
     var usuario = document.getElementById("usuario").value;
-    var cpf = document.getElementById("CPF").value;
+    var cpf = document.getElementById("cpf").value;
     var numero = document.getElementById("numero").value;
     var senha = document.getElementById("senha").value;
     var senha2 = document.getElementById("senha2").value;

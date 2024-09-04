@@ -1,23 +1,24 @@
 <?php
-include "/xampp/htdocs/TCC/conexao.php";
+include "conexao.php";
 
-$usuario = filter_input(INPUT_POST, "usuario", FILTER_SANITIZE_STRING);
-$CPF = filter_input(INPUT_POST, "CPF", FILTER_SANITIZE_STRING);
-$email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
-$numero = filter_input(INPUT_POST, "numero", FILTER_SANITIZE_STRING);
-$senha = filter_input(INPUT_POST, "senha", FILTER_SANITIZE_STRING);
-$senha2 = filter_input(INPUT_POST, "senha2", FILTER_SANITIZE_STRING);
+?>
+<?php
 
-if ($senha === $senha2) {
-        $result_usuario="INSERT INTO cliente (usuario, CPF, email, numero, senha) VALUES ('$usuario', '$CPF', '$email', '$numero', '$senha')";
-        $SQL=mysqli_query($conn, $result_usuario);
-}
-else {
-    echo "Erro ao cadastrar o usuário.";
-}
-    
+session_start();
 
-
+	if($_SESSION['nivel']=="adm"  )  {
+		
+		echo "<center>Você está logado</center><br><br><br>";	
+		
+		
+		
+		}else{
+	
+			
+			header("Location:cadastro.php");
+		exit;
+			
+	}
 ?>
 
 <!DOCTYPE html>
@@ -39,13 +40,18 @@ else {
     <div class="interface">
         <h2 class="titulo">CADASTRO</h2>
     <div class="wrapper">
+<<<<<<< HEAD:Cadastro/cadastro.php
         <h1>CRIAR CONTA</h1>
         <form name="form_cadastro" id="form_cadastro" action="cadastro.php" method="POST" onsubmit="return validarFormulario()">
+=======
+        <h1>ENTRAR</h1>
+        <form name="form_cadastro" id="form_cadastro" action="inseri.php" method="POST" onsubmit="return validarFormulario()">
+>>>>>>> a50da84c61adb4b291954bf717100e33ce45b0ae:cadastro.php
         <div class="input-box">
         <input type="text" name="usuario" id="usuario" placeholder="Usuário" maxlength="28" required>
 </div>
         <div class="input-box">
-        <input type="text" name="CPF" id="CPF" placeholder="CPF" required>
+        <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
 </div>
             <div class="input-box">
             <input type="email" name="email" id="email" placeholder="E-mail" required>
@@ -64,10 +70,10 @@ else {
             <a href="#">Esqueceu a senha?</a>
         </div>
 
-        <button type="submit" class="btn">Login</button>
+        <button type="submit" name="cadastrar" id="cadastrar" class="btn">Cadastrar</button> 
 
         <div class="registrar-link">
-            <p>Já tem conta? <a href="./login.php">Entrar</a></p>
+            <p>Já tem conta? <a href="login.php">Entrar</a></p>
         </div>
     </form>
     </div>
