@@ -30,7 +30,7 @@
                 </ul>
             </nav>
             <div class="advance-contato">
-                <a href="./Cadastro/login.php">
+                <a href="login.php">
                     <button><i class="bi bi-person-circle"></i></button>
                 </a>
             </div>
@@ -54,25 +54,25 @@
                 <h2 class="section-title">Nossos Serviços</h2>
                 <div class="services-grid">
                     <div class="service-card">
-                        <img src="../TCC/img/consultoria.jfif" alt="Serviço 1" class="service-image">
+                        <img src="consultoria.jfif" alt="Serviço 1" class="service-image">
                         <div class="service-content">
                             <h3 class="service-title">Consultoria e Estratégia de Tecnologia</h3>
                         </div>
                     </div>
                     <div class="service-card">
-                        <img src="../TCC/img/dessoft.jfif" alt="Serviço 2" class="service-image">
+                        <img src="dessoft.jfif" alt="Serviço 2" class="service-image">
                         <div class="service-content">
                             <h3 class="service-title">Desenvolvimento de software sob medida</h3>
                         </div>
                     </div>
                     <div class="service-card">
-                        <img src="../TCC/img/designe.jfif" alt="Serviço 3" class="service-image">
+                        <img src="designe.jfif" alt="Serviço 3" class="service-image">
                         <div class="service-content">
                             <h3 class="service-title">Design e Experiência do Usuário (UX/UI)</h3>
                         </div>
                     </div>
                     <div class="service-card">
-                        <img src="../TCC/img/banco.jfif" alt="Serviço 4" class="service-image">
+                        <img src="banco.jfif" alt="Serviço 4" class="service-image">
                         <div class="service-content">
                             <h3 class="service-title">Desenvolvimento de Sistemas de Dados</h3>
                         </div>
