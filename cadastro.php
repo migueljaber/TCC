@@ -2,24 +2,7 @@
 include "conexao.php";
 
 ?>
-<?php
 
-session_start();
-
-	if($_SESSION['nivel']=="adm"  )  {
-		
-		echo "<center>Você está logado</center><br><br><br>";	
-		
-		
-		
-		}else{
-	
-			
-			header("Location:cadastro.php");
-		exit;
-			
-	}
-?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -40,13 +23,8 @@ session_start();
     <div class="interface">
         <h2 class="titulo">CADASTRO</h2>
     <div class="wrapper">
-<<<<<<< HEAD:Cadastro/cadastro.php
-        <h1>CRIAR CONTA</h1>
-        <form name="form_cadastro" id="form_cadastro" action="cadastro.php" method="POST" onsubmit="return validarFormulario()">
-=======
         <h1>ENTRAR</h1>
         <form name="form_cadastro" id="form_cadastro" action="inseri.php" method="POST" onsubmit="return validarFormulario()">
->>>>>>> a50da84c61adb4b291954bf717100e33ce45b0ae:cadastro.php
         <div class="input-box">
         <input type="text" name="usuario" id="usuario" placeholder="Usuário" maxlength="28" required>
 </div>
