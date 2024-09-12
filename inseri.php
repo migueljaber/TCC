@@ -1,5 +1,5 @@
 <?php
-include_once("conexao.php");
+include_once ("conexao.php");
 
 $usuario = filter_input(INPUT_POST, "usuario", FILTER_SANITIZE_STRING);
 $cpf = filter_input(INPUT_POST, "cpf", FILTER_SANITIZE_STRING);

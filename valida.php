@@ -30,8 +30,8 @@ session_start();
             
         //Buscar na tabela usuario o usuário que corresponde com os dados digitado no formulário
         $result_usuario = "SELECT * FROM cadastro WHERE usuario = '$usuario' && senha = '$senha' ";
-        $resultado_usuario = mysqli_query($conn, $result_usuario);
-        $resultado = mysqli_fetch_assoc($resultado_usuario);
+        $SQL = mysqli_query($conn, $result_usuario);
+        $resultado = mysqli_fetch_assoc($SQL);
         
         //Encontrado um usuario na tabela usuário com os mesmos dados digitado no formulário
         if(isset($resultado)){

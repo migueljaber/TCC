@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="inicio.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Advance</title>
 </head>
@@ -18,19 +18,19 @@
         <div class="interface">
             <div class="logo">
                 <a href="#">
-                    <img width="100px" height="100px" src="img/logo.1.png" alt="logo">
+                    <img width="100px" height="100px" src="img/logo.png" alt="logo">
                 </a>
             </div>
             <nav class="menu desktop">
                 <ul>
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#sobre">Sobre nós</a></li>
-                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#services">Especialidades</a></li>
                     <li><a href="#metodologia">Metodologia</a></li>
                 </ul>
             </nav>
             <div class="advance-contato">
-                <a href="login.php">
+                <a href="./cadastro/login.php">
                     <button><i class="bi bi-person-circle"></i></button>
                 </a>
             </div>
@@ -50,12 +50,12 @@
         </section>
 
         <section class="services" id="services">
-<<<<<<< HEAD
+
     <div class="container">
         <h2 class="section-title">Nossos Serviços</h2>
         <div class="services-grid">
             <div class="service-card">
-                <img src="consultoria.jfif" alt="Serviço 1" class="service-image">
+                <img src="img/consultoria.jfif" alt="Serviço 1" class="service-image">
                 <div class="service-content">
                     <h3 class="service-title">Consultoria e Estratégia de Tecnologia</h3>
                     <p>Desenvolva soluções tecnológicas sob medida para seu negócio com nossa consultoria. Avaliação e estratégias personalizadas por R$500.</p>
@@ -63,7 +63,7 @@
                 </div>
             </div>
             <div class="service-card">
-                <img src="dessoft.jfif" alt="Serviço 2" class="service-image">
+                <img src="img/dessoft.jfif" alt="Serviço 2" class="service-image">
                 <div class="service-content">
                     <h3 class="service-title">Desenvolvimento de software sob medida</h3>
                     <p>Criamos soluções personalizadas para atender às suas necessidades únicas por: R$800 a R$1500. Utilizamos as linguagens HTML, CSS, PHP, JavaScript, SQL e Java para garantir a melhor tecnologia para o seu projeto.</p>
@@ -71,7 +71,7 @@
                 </div>
             </div>
             <div class="service-card">
-                <img src="designe.jfif" alt="Serviço 3" class="service-image">
+                <img src="img/designe.jfif" alt="Serviço 3" class="service-image">
                 <div class="service-content">
                     <h3 class="service-title">Design e Experiência do Usuário (UX/UI)</h3>
                     <p>Criamos interfaces intuitivas e atraentes para proporcionar a melhor experiência ao usuário, atendendo às suas necessidades específicas por: R$400 a R$800.</p>
@@ -79,7 +79,7 @@
                 </div>
             </div>
             <div class="service-card">
-                <img src="banco.jfif" alt="Serviço 4" class="service-image">
+                <img src="img/banco.jfif" alt="Serviço 4" class="service-image">
                 <div class="service-content">
                     <h3 class="service-title">Desenvolvimento de Sistemas de Dados</h3>
                     <p>Utilizamos SQL, PHP e Java para construir sistemas de dados robustos e eficientes, adaptados às suas necessidades por: R$100 a R$1600.</p>
@@ -94,7 +94,7 @@
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
-                        <img src="logo.1.png" alt="Sobre nós">
+                        <img src="img/logo.png" alt="Sobre nós">
                     </div>
                     <div class="txt-sobre">
                         <h2>MUITO PRAZER, <span>SOMOS A ADVANCE</span></h2>
