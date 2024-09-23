@@ -184,14 +184,14 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./img/André.jpg" class="card-img-top" alt="Carlos André">
+                        <img src="./img/André.png" class="card-img-top" alt="Carlos André">
                         <div class="card-body">
                             <h3 class="card-title">Carlos André</h3>
                             <p class="card-text">Auxiliar de desenvolvimento</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./img/Luiz.jpg" class="card-img-top" alt="Luís Gabriel">
+                        <img src="./img/Luiz.png" class="card-img-top" alt="Luís Gabriel">
                         <div class="card-body">
                             <h3 class="card-title">Luís Gabriel</h3>
                             <p class="card-text">Mídias sociais</p>
@@ -208,7 +208,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./img/Lucas.png" class="card-img-top" alt="Lucas Laybenith">
+                        <img src="img/Lucas.png" class="card-img-top" alt="Lucas Laybenith">
                         <div class="card-body">
                             <h3 class="card-title">Lucas Laybenith</h3>
                             <p class="card-text">Designer</p>

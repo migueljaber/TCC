@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 19/06/2024 às 02:33
+-- Tempo de geração: 23/09/2024 às 06:44
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -24,38 +24,45 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `cliente`
+-- Estrutura para tabela `usuarios`
 --
 
-CREATE TABLE `cliente` (
-  `ID` int(11) NOT NULL,
-  `Nível` varchar(250) NOT NULL DEFAULT 'cliente',
-  `usuario` varchar(250) NOT NULL,
-  `CPF` varchar(11) NOT NULL,
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL,
+  `nivel` varchar(250) NOT NULL DEFAULT 'cliente',
+  `nome` varchar(250) NOT NULL,
+  `cpf` varchar(250) NOT NULL,
   `email` varchar(250) NOT NULL,
-  `numero` varchar(11) NOT NULL,
+  `numero` varchar(250) NOT NULL,
   `senha` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nivel`, `nome`, `cpf`, `email`, `numero`, `senha`) VALUES
+(1, 'adm', 'MiguelJaber', '129.364.976-71', 'migueljabermacedo@gmail.com', '(21) 98295-7001', 'abcdef');
 
 --
 -- Índices para tabelas despejadas
 --
 
 --
--- Índices de tabela `cliente`
+-- Índices de tabela `usuarios`
 --
-ALTER TABLE `cliente`
-  ADD PRIMARY KEY (`ID`);
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT para tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT de tabela `cliente`
+-- AUTO_INCREMENT de tabela `usuarios`
 --
-ALTER TABLE `cliente`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=215;
+ALTER TABLE `usuarios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

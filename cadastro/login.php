@@ -17,10 +17,10 @@
     <div class="right-login">
         <div class="wrapper">
             <h1>LOGIN</h1>
-    
+    <form action="../testLogin.php" method="POST">
             <div class="textfield">
-                <label for="usuario">Usuário</label>
-                <input type="text" id="usuario" name="usuario" placeholder="Usuário">
+                <label for="usuario">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
             </div>
     
             <div class="textfield">
@@ -33,7 +33,8 @@
                 
             </div>
     
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" name="submit" id="submit" class="btn">Login</button>
+            </form>
     
             <div class="registrar-link">
                 <p>Não tem conta?          <a href="../cadastro/cadastro.php">Cadastrar</a></p>

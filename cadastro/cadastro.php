@@ -1,5 +1,21 @@
 <?php
-include "conexao.php";
+
+if(isset($_POST['submit']))
+{
+   
+    include_once('./conexao.php');
+
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $cpf = $_POST['cpf'];
+    $senha = $_POST['senha'];
+    $numero = $_POST['numero'];
+
+    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, cpf, senha, email, numero) 
+    VALUES ('$nome', '$senha', '$email', '$numero', '$cpf')");
+
+    header('Location: login.php');
+}
 ?>
 
 <!DOCTYPE html>
@@ -14,6 +30,7 @@ include "conexao.php";
     <title>Cadastro</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="cadastro.js"></script>
     <script>
         $(document).ready(function(){
             $('#cpf').mask('000.000.000-00');
@@ -30,11 +47,12 @@ include "conexao.php";
         <div class="right-login">
             <div class="wrapper">
                 <h1>CADASTRO</h1>
+                <form action="./cadastro.php" method="POST">
                 <div class="input-columns">
                     <div class="col">
                         <div class="textfield">
-                            <label for="usuario">Usuário</label>
-                            <input type="text" id="usuario" name="usuario" placeholder="Usuário">
+                            <label for="usuario">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Nome">
                         </div>
                     </div>
                     <div class="col">
@@ -47,14 +65,14 @@ include "conexao.php";
                 <div class="input-columns">
                     <div class="col">
                         <div class="textfield">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Email">
+                            <label for="numero">Número</label>
+                            <input type="text" id="numero" name="numero" placeholder="Número">
                         </div>
                     </div>
                     <div class="col">
                         <div class="textfield">
-                            <label for="numero">Número</label>
-                            <input type="text" id="numero" name="numero" placeholder="Número">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email">
                         </div>
                     </div>
                 </div>
@@ -76,7 +94,8 @@ include "conexao.php";
                     <label><input type="checkbox"> Lembrar senha</label>
                 </div>
 
-                <button type="submit" class="btn">Cadastrar</button>
+                <button type="submit" name="" id="submit" class="btn">Cadastrar</button>
+                </form>
 
                 <div class="registrar-link">
                     <p>Já tem conta? <a href="../cadastro/login.php">Entrar</a></p>
