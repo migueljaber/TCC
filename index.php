@@ -59,7 +59,7 @@
                 <div class="service-content">
                     <h3 class="service-title">Consultoria e Estratégia de Tecnologia</h3>
                     <p>Desenvolva soluções tecnológicas sob medida para seu negócio com nossa consultoria. Avaliação e estratégias personalizadas por R$500.</p>
-                    <button class="btn-services">Adicionar ao carrinho</button>
+                    <button class="btn-services">Adquirir</button>
                 </div>
             </div>
             <div class="service-card">
@@ -67,7 +67,7 @@
                 <div class="service-content">
                     <h3 class="service-title">Desenvolvimento de software sob medida</h3>
                     <p>Criamos soluções personalizadas para atender às suas necessidades únicas por: R$800 a R$1500. Utilizamos as linguagens HTML, CSS, PHP, JavaScript, SQL e Java para garantir a melhor tecnologia para o seu projeto.</p>
-                    <button class="btn-services">Adicionar ao carrinho</button>
+                    <button class="btn-services">Adquirir</button>
                 </div>
             </div>
             <div class="service-card">
@@ -75,7 +75,7 @@
                 <div class="service-content">
                     <h3 class="service-title">Design e Experiência do Usuário (UX/UI)</h3>
                     <p>Criamos interfaces intuitivas e atraentes para proporcionar a melhor experiência ao usuário, atendendo às suas necessidades específicas por: R$400 a R$800.</p>
-                    <button class="btn-services">Adicionar ao carrinho</button>
+                    <button class="btn-services">Adquirir</button>
                 </div>
             </div>
             <div class="service-card">
@@ -83,7 +83,7 @@
                 <div class="service-content">
                     <h3 class="service-title">Desenvolvimento de Sistemas de Dados</h3>
                     <p>Utilizamos SQL, PHP e Java para construir sistemas de dados robustos e eficientes, adaptados às suas necessidades por: R$100 a R$1600.</p>
-                    <button class="btn-services">Adicionar ao carrinho</button>
+                    <button class="btn-services">Adquirir</button>
                 </div>
             </div>
         </div>
@@ -177,7 +177,7 @@
                 <h2 class="titulo">NOSSA <span>EQUIPE</span></h2>
                 <div class="card-group">
                     <div class="card">
-                        <img src="img/Andrei.jpeg" class="card-img-top" alt="Andrei Sousa">
+                        <img src="img/Andrei.png" class="card-img-top" alt="Andrei Sousa">
                         <div class="card-body">
                             <h3 class="card-title">Andrei Sousa</h3>
                             <p class="card-text">Desenvolvedor</p>
@@ -215,7 +215,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./img/david.jpg" class="card-img-top" alt="David Alves">
+                        <img src="./img/david.png" class="card-img-top" alt="David Alves">
                         <div class="card-body">
                             <h3 class="card-title">David Alves</h3>
                             <p class="card-text">Documentador</p>

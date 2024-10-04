@@ -34,31 +34,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar usuário</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./cadastro/cadastrar.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="./cadastro/cadastro.js"></script>
 </head>
 <body>
     <a href="select.php">Voltar</a>
     <div class="main-login">
         <div class="left-login">
-            <h1>ENTRE NO FUTURO COM A ADVANCE</h1>
             <img src="./cadastro/animatecad.svg" class="left-image" alt="barber">
         </div>
     
         <div class="right-login">
             <div class="wrapper">
-                <h1>CADASTRO</h1>
+                <h1>Editar usuário</h1>
                 <form action="./saveEdit.php" method="POST">
                 <div class="input-columns">
                     <div class="col">
                         <div class="textfield">
                             <label for="usuario">Nome</label>
-                            <input type="text" id="nome" name="nome" value=<?php echo $nome;?> required>>
+                            <input type="text" id="nome" name="nome" value=<?php echo $nome;?> required>
                         </div>
                     </div>
                     <div class="col">
                         <div class="textfield">
                             <label for="cpf">CPF</label>
-                            <input type="text" id="cpf" name="cpf" value=<?php echo $cpf;?> required>>
+                            <input type="text" id="cpf" name="cpf" value=<?php echo $cpf;?> required>
                         </div>
                     </div>
                 </div>
@@ -66,13 +69,13 @@
                     <div class="col">
                         <div class="textfield">
                             <label for="numero">Número</label>
-                            <input type="text" id="numero" name="numero" value=<?php echo $numero;?> required>>
+                            <input type="text" id="numero" name="numero" value=<?php echo $numero;?> required>
                         </div>
                     </div>
                     <div class="col">
                         <div class="textfield">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" value=<?php echo $email;?> required>>
+                            <input type="email" id="email" name="email" value=<?php echo $email;?> required>
                         </div>
                     </div>
                 </div>
@@ -85,7 +88,7 @@
                     </div>
                     <div class="col">
                     <input type="hidden" name="id" value=<?php echo $id;?>>
-                    <input type="submit" name="update" id="submit">
+                    <button type="submit" name="update" id="submit" class="btn">Editar</button>
                 </div>
 </body>
 </html>

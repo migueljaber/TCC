@@ -1,11 +1,10 @@
 <?php
 
-    $dbHost = 'Localhost';
-    $dbUsername = 'root';
-    $dbPassword = '';
+    $servidor = 'Localhost';
+    $usuario = 'root';
+    $senha = '';
     $dbName = 'tcc';
     
-    $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
+    $conexao = mysqli_connect($servidor,$usuario,$senha,$dbName);
 
- 
 ?>

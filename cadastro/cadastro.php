@@ -6,13 +6,13 @@ if(isset($_POST['submit']))
     include_once('./conexao.php');
 
     $nome = $_POST['nome'];
-    $email = $_POST['email'];
     $cpf = $_POST['cpf'];
-    $senha = $_POST['senha'];
+    $email = $_POST['email'];
     $numero = $_POST['numero'];
+    $senha = $_POST['senha'];
 
-    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, cpf, senha, email, numero) 
-    VALUES ('$nome', '$senha', '$email', '$numero', '$cpf')");
+    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, cpf, email, numero, senha) 
+    VALUES ('$nome', '$cpf', '$email', '$numero', '$senha')");
 
     header('Location: login.php');
 }
@@ -23,7 +23,6 @@ if(isset($_POST['submit']))
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cads.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="cadastrar.css">
 
@@ -31,11 +30,7 @@ if(isset($_POST['submit']))
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <script src="cadastro.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#cpf').mask('000.000.000-00');
-        });
-    </script>
+    
 </head>
 <body>
     <div class="main-login">
@@ -47,7 +42,7 @@ if(isset($_POST['submit']))
         <div class="right-login">
             <div class="wrapper">
                 <h1>CADASTRO</h1>
-                <form action="./cadastro.php" method="POST">
+                <form action="./cadastro.php" method="POST" onsubmit="return validarFormulario()">
                 <div class="input-columns">
                     <div class="col">
                         <div class="textfield">
@@ -94,7 +89,7 @@ if(isset($_POST['submit']))
                     <label><input type="checkbox"> Lembrar senha</label>
                 </div>
 
-                <button type="submit" name="" id="submit" class="btn">Cadastrar</button>
+                <button type="submit" name="submit" id="submit" class="btn">Cadastrar</button>
                 </form>
 
                 <div class="registrar-link">

@@ -5,5 +5,4 @@
 	unset($_SESSION['senha']);
 	header("Location: cadastro/login.php");
 
-
 ?>
