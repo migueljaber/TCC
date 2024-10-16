@@ -1,9 +1,11 @@
 <?php
-    $servidor="localhost";
-    $usuario="root";
-    $senha="";
-    $dbname="tcc";
 
-$conn=mysqli_connect($servidor,$usuario,$senha,$dbname);
+    $dbHost = 'Localhost';
+    $dbUsername = 'root';
+    $dbPassword = '';
+    $dbName = 'tcc';
     
+    $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
+
+ 
 ?>

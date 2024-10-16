@@ -1,5 +1,21 @@
 <?php
-include "conexao.php";
+
+if(isset($_POST['submit']))
+{
+   
+    include_once('./conexao.php');
+
+    $nome = $_POST['nome'];
+    $cpf = $_POST['cpf'];
+    $email = $_POST['email'];
+    $numero = $_POST['numero'];
+    $senha = $_POST['senha'];
+
+    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, cpf, email, numero, senha) 
+    VALUES ('$nome', '$cpf', '$email', '$numero', '$senha')");
+
+    header('Location: login.php');
+}
 ?>
 
 <!DOCTYPE html>
@@ -7,18 +23,14 @@ include "conexao.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cads.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="cadastrar.css">
 
     <title>Cadastro</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#cpf').mask('000.000.000-00');
-        });
-    </script>
+    <script src="cadastro.js"></script>
+    
 </head>
 <body>
     <div class="main-login">
@@ -30,11 +42,12 @@ include "conexao.php";
         <div class="right-login">
             <div class="wrapper">
                 <h1>CADASTRO</h1>
+                <form action="./cadastro.php" method="POST" onsubmit="return validarFormulario()">
                 <div class="input-columns">
                     <div class="col">
                         <div class="textfield">
-                            <label for="usuario">Usuário</label>
-                            <input type="text" id="usuario" name="usuario" placeholder="Usuário">
+                            <label for="usuario">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Nome">
                         </div>
                     </div>
                     <div class="col">
@@ -47,14 +60,14 @@ include "conexao.php";
                 <div class="input-columns">
                     <div class="col">
                         <div class="textfield">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Email">
+                            <label for="numero">Número</label>
+                            <input type="text" id="numero" name="numero" placeholder="Número">
                         </div>
                     </div>
                     <div class="col">
                         <div class="textfield">
-                            <label for="numero">Número</label>
-                            <input type="text" id="numero" name="numero" placeholder="Número">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email">
                         </div>
                     </div>
                 </div>
@@ -76,7 +89,8 @@ include "conexao.php";
                     <label><input type="checkbox"> Lembrar senha</label>
                 </div>
 
-                <button type="submit" class="btn">Cadastrar</button>
+                <button type="submit" name="submit" id="submit" class="btn">Cadastrar</button>
+                </form>
 
                 <div class="registrar-link">
                     <p>Já tem conta? <a href="../cadastro/login.php">Entrar</a></p>
