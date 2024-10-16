@@ -351,54 +351,6 @@ form .advance-enviar input{
 }
 
 
-<<<<<<< HEAD
-=======
-.footer-col{
-    width: 25%;
-    padding: 0 15px;
-}
-.footer-col h4{
-    font-size: 22px;
-    color: white;
-    margin-bottom: 20px;
-    font-weight: 500;
-    position: relative;
-    text-transform: uppercase;
-}
-.footer-col ul{
-    list-style: none;
-}
-.footer-col ul li{
-    margin: 10px 0;
-}
-.footer-col ul li a{
-    font-size: 16px;
-    text-transform: capitalize;
-    color: white;
-    text-decoration: none;
-    font-weight: 300;
-    display: block;
-    transition: all 0.3s ease;
-}
-
-.footer-col ul li a:hover{
-    color: #cecdcd;
-    padding-left: 10px;
-}
-
-/* Responsivo */
-@media (max-width: 800px) {
-    .footer-col{
-        width: 50%;
-        margin-bottom: 30px;
-    }
-}
-@media (max-width:600px) {
-    .footer-col{
-        width: 100%;
-    }
-}
->>>>>>> 6e5cbe881ad420c14a6a65aeddc9df40d63faedd
 
 .main{
     justify-content: center;
