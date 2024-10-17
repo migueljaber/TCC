@@ -1,47 +1,46 @@
-// Importando a biblioteca ScrollReveal
-// Certifique-se de que o ScrollReveal foi carregado corretamente antes de usar.
 
-window.sr = ScrollReveal({ reset: true });
 
-// Configurando animações de ScrollReveal para as seções
-sr.reveal('.inicio', {
-    origin: 'top',
-    distance: '50px',
-    duration: 2000
-});
-sr.reveal('.services', {
-    origin: 'bottom',
-    distance: '50px',
-    duration: 2000
-});
-sr.reveal('.sobre', {
-    origin: 'left',
-    distance: '50px',
-    duration: 2000
-});
-sr.reveal('.motivos', {
-    origin: 'right',
-    distance: '50px',
-    duration: 2000
-});
-sr.reveal('.metodologia', {
-    origin: 'bottom',
-    distance: '50px',
-    duration: 2000
-});
-sr.reveal('.equipe', {
-    origin: 'top',
-    distance: '50px',
-    duration: 2000
-});
-sr.reveal('.formulario', {
-    origin: 'bottom',
-    distance: '50px',
-    duration: 2000
-});
-
-// Função para animação de texto
 document.addEventListener('DOMContentLoaded', function() {
+   
+    const sr = ScrollReveal({ reset: true });
+
+    sr.reveal('.inicio', {
+        origin: 'top',
+        distance: '50px',
+        duration: 2000
+    });
+    sr.reveal('.services', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 2000
+    });
+    sr.reveal('.sobre', {
+        origin: 'left',
+        distance: '50px',
+        duration: 2000
+    });
+    sr.reveal('.motivos', {
+        origin: 'right',
+        distance: '50px',
+        duration: 2000
+    });
+    sr.reveal('.metodologia', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 2000
+    });
+    sr.reveal('.equipe', {
+        origin: 'top',
+        distance: '50px',
+        duration: 2000
+    });
+    sr.reveal('.formulario', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 2000
+    });
+
+   
     const el = document.querySelector("h1");
     if (el) {
         const text = "ADVANCE, ONDE A INOVAÇÃO TRANSFORMA IDEIAS EM FUTURO.";
@@ -51,16 +50,17 @@ document.addEventListener('DOMContentLoaded', function() {
             const char = text.split("").reverse();
             const typer = setInterval(() => {
                 if (!char.length) {
-                    return clearInterval(typer);
+                    clearInterval(typer);
+                    return;
                 }
                 const next = char.pop();
                 el.innerHTML += next;
             }, interval);
         }
 
-        showText(el, text, );
+        showText(el, text, interval);
     }
-interval
+
     // IntersectionObserver para os cartões de serviço
     const serviceCards = document.querySelectorAll('.service-card');
 
@@ -70,7 +70,7 @@ interval
         threshold: 0.1
     };
 
-    const observerCallback = function(entries, observer) {
+    const observerCallback = function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('in-view');
@@ -86,7 +86,5 @@ interval
         observer.observe(card);
     });
 });
-
-
 
 

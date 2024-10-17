@@ -1,0 +1,566 @@
+/* estilo geral */
+*{
+
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    height:100vh;
+	overflow-x:auto;
+    background-image: url(./img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+p.txt {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.advance-contato button {
+    padding: 5px 30px;
+    font-size: 35px;
+    font-weight: 600;
+    background-color: #128f81;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .2s;
+}
+h2.titulo{
+       color: white;
+       font-size: 36px;
+       text-align: center;
+
+}
+h2.titulo span{
+    color: #128f81;
+}
+
+/* estilo cabeçalho */
+
+/* Estiliza o header para que fique fixo no topo e tenha uma cor de fundo sólida */
+header {
+    width: 100%;
+    position: fixed; /* Fixa o header na parte superior da tela */
+    top: 0;
+    left: 0;
+    background-color: #2c2c2c; /* Cor de fundo sólida */
+    padding: 5px 4%;
+    z-index: 1000; /* Certifica-se de que o header esteja acima de outros elementos */
+    transition: background-color 0.5s ease; /* Adiciona uma transição suave para a cor de fundo */
+}
+
+/* Estiliza o conteúdo dentro do header */
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estiliza os links dentro do header */
+header a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.2s, transform 0.2s;
+    font-size: 20px;
+}
+
+/* Adiciona efeitos ao passar o mouse sobre os links */
+header a:hover {
+    font-family: "Poppins", sans-serif;
+    transform: scale(1.20);
+    color: #128f81;
+}
+
+/* Remove os marcadores da lista e ajusta o layout dos itens de navegação */
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estiliza os itens da lista de navegação */
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+/*ESTILO DO TOPO DO SITE */
+section.inicio{
+    padding: 150px 4%;
+      gap: 20PX;
+}
+section.inicio .flex{
+    align-content: center;
+    justify-content: center;
+     gap: 20px;
+}
+
+.inicio h1{
+    color: white;
+    font-size: 38px;
+    line-height: 40px;
+     text-align: center;
+     padding-top: 50px;
+}
+.inicio .txt-topo-site h1 span{
+    color: #128f81;
+    font-family: popp;
+
+}
+.inicio .txt-topo-site p{
+    color: white;
+    margin: 50px 0;
+    padding-top: 70px;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+.inicio .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+header .advance-contato button{
+    background-color: #2c2c2c;
+    box-shadow: 0px 0px 8px #2c2c2c ;
+    transform: scale(1.20);
+ }
+ header .advance-contato button i{
+    color: #128f81;
+ }
+
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+
+}
+
+
+
+/* styles.css */
+
+.services {
+    padding: 50px 20px;
+     background-color: #fff;
+    position: relative;
+    overflow: hidden; /* Garante que o gradiente de sombra não se estenda além da seção */
+}
+
+/* Sombra suave no início e no fim da seção */
+.services::before,
+.services::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+    
+
+}
+
+.services::after {
+    top: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 100%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    backdrop-filter: blur(10px);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    padding:10px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dois cartões por linha */
+    gap: 20px;
+   
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-image {
+   width: 100%;
+    height: 350px;
+    display: block;
+}
+
+.service-content {
+    padding: 20px;
+}
+
+.service-title {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.service-description {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Animação suave ao rolar para dentro da visão */
+.service-card.in-view {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.service-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+/* ESTILO DO SOBRE */
+section.sobre{
+    padding: 160px 4%;
+}
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+    box-shadow: 20px 20px 20px #333232;
+    backdrop-filter: blur(10px);
+}
+.sobre .img-sobre{
+    display: block;
+}
+.sobre .txt-sobre{
+    color: white;
+    justify-content: space-between;
+
+}
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.sobre .txt-sobre h2 span{
+    color: #128f81;
+    display: block;
+}
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+    text-align-last: left; /* Alinha a última linha à esquerda */
+    padding-right:30px;
+}
+
+.sobre .txt-sobre .advance-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #128f81;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+    justify-content: space-between;
+}
+/*ESTILO DO FORMULARIO DE CONTATO*/
+section.formulario{
+    padding: 175px 4%;
+
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top:40px;
+}
+form input, form textarea{
+    width: 100%;
+    background: #fff;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 500px;
+}
+
+form .advance-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+form .advance-enviar input{
+    width: 120px;
+    background-color: #128f81;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+
+.main{
+    justify-content: center;
+    display: flex;
+    
+}
+
+.card{
+    margin: 50px;
+    background-color: transparent;
+    color: #ffffff;
+    width: 450px;
+    height: 400px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+}
+
+
+.card>h1{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.card>h2{
+    font-size: 25px;
+    text-align: center;
+    color: #128f81;
+    padding: 10px;
+}
+.card>p{
+    font-size: 14px;
+    text-align: left;
+    color: white;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 20px;
+}
+
+.dev-2{
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+}
+
+.card{
+    margin: 50px;
+    background-color: transparent;
+    color: #ffffff;
+    width: 350px;
+    height: 390px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    justify-content: space-between;
+}
+
+
+.card>h1{
+    font-size: 25px;
+    padding: 5px;
+}
+
+.card>h2{
+    font-size: 25px;
+    text-align: center;
+    color: #128f81;
+    padding: 5px;
+}
+.card>p{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    gap: 5px;
+    padding: 20px 20px;
+    text-align: justify;
+}
+
+.motivos .col{
+    margin: 30px;
+    color: white;
+    width: 400px;
+    height: 100px;
+    text-align: justify;
+    display: inline-block;
+    justify-content: space-between;
+
+}
+.colunas{
+    align-items: center;
+}
+
+.motivos .col p{
+    padding: 30px;
+}
+
+
+.container i{
+    font-size: 60px;
+    color: #128f81;
+}
+section.motivos{
+    padding: 100px;
+
+}
+
+.motivos>p{
+    color: wheat;
+    font-size: 20;
+    text-align: center;
+    padding: 5px;
+}
+
+.interface .titulo h2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 36px;
+    padding: 40px;
+    text-decoration: none;
+    
+}
+.interface .titulo span{
+    color: #128f81;
+}
+
+.card-group .card img{
+    height: 300px;
+    width: 300px;
+    padding-top: 20px;
+}
+ .card-group .card-body p{
+    color: wheat;
+}
+.card-group .card-body h2{
+    text-decoration: none;
+}
+.card-group {
+    display: flex;
+    flex-wrap: nowrap; /* Evita que as cartas quebrem para uma nova linha */
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal se o conteúdo ultrapassar a largura do contêiner */
+    justify-content: center;
+}
+
+.card {
+    flex: 0 0 auto; /* Define o tamanho inicial das cartas para que elas não cresçam ou encolham */
+    margin-right: 15px; /* Adiciona espaçamento entre as cartas */
+    justify-content: center;
+}
+ .especialidades, .sobre, .motivos, .metodologia, .equipe, .formulario{
+    visibility: hidden;
+}
+
+
+.in-view {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.service-card {
+    opacity: 0;
+    transform: translateY(50px);
+}
+/* Estilos gerais para os cartões de serviço */
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 16px;
+}
+
+/* Contêiner para os botões */
+.btn-container {
+    margin-top: auto; /* Empurra o botão para o final do conteúdo */
+}
+
+/* Estilos para o botão */
+.btn-services {
+    background-color: #128f81;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    min-height: 50px; /* Define uma altura mínima para todos os botões */
+}
+
+.btn-services:hover {
+    background-color: #0c5a51;
+}
+
+.btn-services i {
+    font-size: 20px;
+    color: black;
+}

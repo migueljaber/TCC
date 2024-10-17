@@ -7,20 +7,21 @@
     font-family:"Poppins", sans-serif;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: black;
-    background-size: cover;
-    background-position: center;
-}
+
+    body {
+        height: 100vh;
+        overflow: hidden;
+        background-image: url(../img/fundo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
 
 .main-login{
     width: 100vw;
     height: 100vh;
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,6 +34,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 20px;
 }
 .left-login > h1{
     color:  #128f81;
@@ -47,7 +49,7 @@ body{
 }
 
 .wrapper {
-    width:90%;
+    width:70%px;
     background:  #2c2c2c;
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(20px);
@@ -64,7 +66,7 @@ body{
 .wrapper h1{
     font-size: 32px;
     text-align: center;
-    color: #128f81;
+    color:  #128f81;
     font-weight: 800;
     margin: 0;
 }
@@ -87,9 +89,9 @@ body{
 }
 
 .textfield > input{
-    width: 250px;
-    height: 50px;
-    background:  #2b134b;
+    width: 100%;
+    height: 100%;
+    background:  #76737c;
     border: none;
     outline: none;
     border: 2px solid rgba(255, 255, 255, .2);
@@ -143,7 +145,7 @@ body{
 .wrapper .btn {
     width: 100%;
     height: 45px;
-    background: #128f81;
+    background:  #128f81;
     border: none;
     outline: none;
     border-radius: 40px;
@@ -194,71 +196,31 @@ body{
     }
     
 }
-.input-columns {
+/* Botão de Voltar */
+.btn-voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 5px;
-}
-
-.input-columns .col {
-    width: 48%; /* Cada coluna ocupa 48% da largura */
-    display: flex;
-    flex-direction: column;
-}
-
-.textfield {
-    margin-bottom: 10px;
-}
-
-.textfield input {
-    width: 100%;
-    height: 50px;
-    background: #76737c;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
-    font-size: 14pt;
-    color: #fff;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.textfield label {
-    color: #f0ffffde;
-    margin-bottom: 10px;
-    display: block;
-}
-
-.lembrar-esqueceu {
-    margin-top: 20px;
-    font-size: 14.5px;
-}
-
-.btn {
-    width: 100%;
-    height: 45px;
+    align-items: center;
     background: #128f81;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    cursor: pointer;
-    font-size: 16px;
-    color: #2b134b;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-top: 20px;
-}
-
-.registrar-link {
-    font-size: 14.5px;
-    text-align: center;
-    margin: 20px 0 15px;
-}
-
-.registrar-link p a {
     color: #fff;
     text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 16px;
     font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s;
 }
+
+.btn-voltar:hover {
+    background: #1ba089;
+    transform: translateY(-2px);
+}
+
+.btn-voltar i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+

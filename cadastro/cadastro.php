@@ -24,7 +24,7 @@ if(isset($_POST['submit']))
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="cadastrar.css">
+    <link rel="stylesheet" href="cad.css">
 
     <title>Cadastro</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -40,6 +40,10 @@ if(isset($_POST['submit']))
         </div>
     
         <div class="right-login">
+               <!-- Botão de Voltar -->
+        <a href="../index.php" class="btn-voltar">
+            <i class='bx bx-left-arrow-alt'></i> Voltar
+        </a>
             <div class="wrapper">
                 <h1>CADASTRO</h1>
                 <form action="./cadastro.php" method="POST" onsubmit="return validarFormulario()">
