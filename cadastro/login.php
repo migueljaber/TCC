@@ -34,7 +34,7 @@
                     </div>
         
                     <div class="lembrar-esqueceu">
-                        <label><input type="checkbox"> Lembrar senha</label>
+                        
                     </div>
         
                    <a href= "../inicio.php"> <button type="submit" name="submit" id="submit" class="btn">Login</button></a>

@@ -1,33 +1,55 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documento sem título</title>
-<style type="text/css">
-#apDiv1 {
-	position: absolute;
-	left: 464px;
-	top: 240px;
-	width: 861px;
-	height: 243px;
-	z-index: 1;
-	text-align: center;
-	font-size: 36px;
-}
-body {
-	background-color: #39C;
-}
-#apDiv1 p {
-	color: #FFF;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("img/fundo.png");
+            color: #f8d7da;
+            text-align: center;
+            padding: 80px;
+        }
+        .container {
+            border: 1px solid #f5c6cb;
+            background-color: #001f21;
+            padding: 20px;
+            display: inline-block;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 35px;
+            color: #128f81;
+        }
+        p {
+            font-size: 18px;
+            padding-bottom: 10px;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        button{
+            padding: 15px;
+            border-radius: 15px;
+        }
+    </style>
 </head>
-
 <body>
-<div id="apDiv1">
-  <p>LOGIN OU SENHA INCORRETOS, VOLTE E TENTE NOVAMENTE.</p>
-  <p>&nbsp;</p>
-  <p><a href="index.php">VOLTAR</a></p>
-</div>
+    <div class="container">
+        <h1>Erro de Acesso</h1>
+        <p>Houve um problema ao acessar o sistema.<br>
+        Por favor, verifique suas credenciais ou tente novamente mais tarde.</p>
+        <button><a href="cadastro/login.php">Voltar para a página de login</a></button>
+    </div>
 </body>
 </html>
