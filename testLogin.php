@@ -1,20 +1,17 @@
 <?php
 session_start();
 
-if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])) {
-    // Acessa
+if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])) {
     include_once('conexao.php');
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
     // Consulta para buscar o usuário com o email e senha
     $sql = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
-
-    // Executa a consulta
     $result = $conexao->query($sql);
 
     // Verifica se encontrou o usuário
-    if(mysqli_num_rows($result) < 1) {
+    if (mysqli_num_rows($result) < 1) {
         // Se não encontrou nenhum usuário, redireciona para erro
         unset($_SESSION['email']);
         unset($_SESSION['senha']);
@@ -22,9 +19,11 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
     } else {
         // Se encontrou, recupera os dados do usuário
         $row = $result->fetch_assoc();
+        $id = $row['id'];      // Recupera o campo 'id' do usuário
         $nivel = $row['nivel']; // Recupera o campo 'nivel' do usuário
 
-        // Armazena o email, senha e nível na sessão
+        // Armazena o id, email, senha e nível na sessão
+        $_SESSION['id'] = $id;
         $_SESSION['email'] = $email;
         $_SESSION['senha'] = $senha;
         $_SESSION['nivel'] = $nivel;
